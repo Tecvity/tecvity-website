@@ -1,218 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coming Soon</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: #eee;
+}
 
-    <title>Tecvity</title>
-<!--
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
--->
-    <!-- load CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                       <!-- http://kenwheeler.github.io/slick/ -->
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
 
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
-    
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+</style>
 </head>
 
 <body>
-    
-    <div id="tm-bg"></div>
-    <div id="tm-wrap">
-        <div class="tm-main-content">
-            <div class="container tm-site-header-container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
-                        <div class="tm-site-header">
-                            <h1 class="mb-4">Tecvity</h1>
-                            <img src="img/underline.png" class="img-fluid mb-4">
-                            <p></p>Delivering Creative Technological Solutions</p>        
-                        </div>                        
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="content">
-                            <div class="grid">
-                                <div class="grid__item" id="home-link">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-home fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Welcome</span>
-                                            <div class="product__bg"></div>        
-                                        </div>                                    
-                                        <div class="product__description">
-                                            <div class="row mb-3">
-                                                <div class="col-12">
-                                                    <h2 class="tm-page-title">Welcome to Tecvity</h2>        
-                                                </div>
-                                            </div>                                        
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <img src="img/welcome-1.jpg" class="img-fluid mb-3">
-                                                    <p>Tecvity is a Software Company that provides Web-Development Services</p>
-                                                    <p>This Software House Started in 2019 with a Moto of providing most in-demand and correlated tech services under one name.</p>    
-                                                </div>
-                                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                                    <p>Tecvity is backed-up with Skilled and Experienced individuals to Entertain their Clients</p>
-                                                    <p>Kindly Refer Team-Section for more details, Thank You!</p>
-                                                    <p>Learn More<a href="https://www.linkedin.com/company/tecvity/" target="_blank"> LinkedIn</a>.</p>
+<div class="container text-center" id="error">
 
-
-                                                    <img src="img/welcome-2.jpg" class="img-fluid">
-                                                </div>                                        
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="grid__item" id="team-link">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-users fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Services</span>
-                                            
-                                            <div class="product__bg"></div>            
-                                        </div>                                     
-                                        <div class="product__description">
-                                            <div class="p-sm-4 p-2">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Services</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row tm-reverse-sm">
-                                                    <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">We Offers Complete Front & Back End Web Development Services.</p>
-                                                        <p>Details Here: <a href="https://www.fiverr.com/tecvity/develop-a-professional-website-for-your-business?context_referrer=user_page&ref_ctx_id=e22c690b70290947047a8c09d8b6a72a&pckg_id=1&pos=1&seller_online=true&imp_id=426430aa-7900-424c-b25d-86e056623cad" target="_blank">Fiverr</a></p>
-
-
-                                                    </div>                                                
-                                                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                        <img src="img/team.jpg" class="img-fluid">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="grid__item">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-handshake fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Our Work</span>
-                                            <div class="product__bg"></div>             
-                                        </div>                                                                 
-                                        <div class="product__description">
-                                            <div class="p-sm-4 p-2">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Our Work</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="p-sm-4 p-2 tm-img-container">
-                                                            <div class="tm-img-slider" id="tmImgSlider">
-                                                              <a href="#" class="tm-slider-img-link"><img src="C:\Users\Najam Ul Saqib\Desktop\2121.jpg" alt="Image 1" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="" alt="Image 2" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="" alt="Image 3" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src="" alt="Image 4" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src=" alt="Image 5" class="img-fluid tm-slider-img"></a>
-                                                              <a href="#" class="tm-slider-img-link"><img src=" alt="Image 6" class="img-fluid tm-slider-img"></a>
-                                                            </div>
-                                                        </div>  
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>       
-                                    </div>
-                                </div>
-
-                                <div class="grid__item">
-                                    <div class="product">
-                                        <div class="tm-nav-link">
-                                            <i class="fas fa-comments fa-3x tm-nav-icon"></i>
-                                            <span class="tm-nav-text">Contact</span>
-                                            <div class="product__bg"></div>             
-                                        </div>                                                              
-                                        <div class="product__description">
-                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
-                                                <div class="row mb-3">
-                                                    <div class="col-12">
-                                                        <h2 class="tm-page-title">Contact Us</h2>        
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-4">
-                                                    <div class="col-12">
-                                                        <p>Tecvitymain@gmail.com <a href="mailto:Tecvitymain@gmail.com" target="_blank">Email</a></p>
-
-
-                                                           <p> +92 308 8438733 <a href="tel:+923088438733">Call</a></p>
-                                                        
-                                                    </div>
-                                                </div>
-                                                
-                                                </div>
-                                            </div>                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>                       
-                    </div>
-                </div>                
-            </div>
-            <footer>
-                
-            </footer>
-        </div> <!-- .tm-main-content -->  
+  <svg height="100" width="100">
+    <circle cx="50" cy="50" r="31" stroke="#679b08" stroke-width="9.5" fill="none" />
+    <circle cx="50" cy="50" r="6" stroke="#679b08" stroke-width="1" fill="#679b08" />
+    <line x1="50" y1="50" x2="35" y2="50" style="stroke:#679b08;stroke-width:6" />
+    <line x1="65" y1="35" x2="50" y2="50" style="stroke:#679b08;stroke-width:6" />
+    <path d="M59 65 L83 65 L75 87 Z" fill="#679b08" />
+    <rect width="20" height="9" x="70" y="56" style="fill:#eee;stroke-width:0;" />
+  </svg>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
+      <h1>Future home of something quite cool.</h1>
+      <p class="lead">If you are a <strong>visitor</strong>, check back soon.</p>
     </div>
-    <!-- load JS -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->    
-    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
-    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
-    <script src="js/main.js"></script>  
-    <script>      
+  </div>
 
-        function setupFooter() {
-            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
-
-            var main = $('.tm-main-content');
-
-            if($(window).height() < pageHeight) {
-                main.addClass('tm-footer-relative');
-            }
-            else {
-                main.removeClass('tm-footer-relative');   
-            }
-        }
-
-        /* DOM is ready
-        ------------------------------------------------*/
-        $(function(){
-
-            setupFooter();
-
-            $(window).resize(function(){
-                setupFooter();
-            });
-
-            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
-        });
-
-    </script>             
+</div>
 
 </body>
 </html>
