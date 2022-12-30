@@ -68,6 +68,9 @@
    <source src="matrix3.mp4" type="video/mp4" ></video>
    </div>
    </div>
+  </div>
+</div>
+
 
 
 <div class="container2">
@@ -111,7 +114,7 @@
 
 
 
-
+<div class="w3">
 <h1 class="w3-center" id="w3-center">Featured Work</h1>
 <div class="carousel"   data-flickity='{ "draggable": false }'>
 
@@ -123,6 +126,8 @@
    </div>
    
 </div>
+</div>
+
 
 
 <div>
@@ -186,6 +191,9 @@
                   </p>
   
           <img src="gen1.png" class="gen1" id="gen1">
+
+
+          
 
             
         </div>
@@ -284,11 +292,23 @@
 
 
 <style>
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
       body {
         margin:0;
         background: white;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-weight:'Courier New', Courier, monospace
+        font-weight:'Courier New', Courier, monospace;
+        
       }
 
       .logo {
@@ -306,6 +326,7 @@
 
      header {
         background: rgba (0, 0, 0, 0 );
+        width:100%
      }
 
     header::after{
@@ -387,9 +408,11 @@ position:relative;
 
 
 .container2 {
+  
    width:100%;
    height:100vh;
    padding: 0 8%;
+   margin-top: 60px;
 }
 
 .container2 h1 {
@@ -475,6 +498,34 @@ body { font-family: sans-serif; }
    text-align: center;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .w3-center{width:100%;
+  margin-left: 0;
+  margin-top: 690px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .w3-center{width:100%;
+    margin-left: 0;
+    margin-top: 690px;}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .carousel-cell{width:100%;
+  margin-left: 0;
+  margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .carousel-cell{width:100%;
+    margin-left: 0;
+    margin-top: 0;}
+}
+
+
 
 
 
@@ -627,38 +678,62 @@ body { font-family: sans-serif; }
   }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .button-64{width:40%;
+  margin-left: -50px;
+  margin-top: -300px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .button-64{width:40%;
+    margin-left: -50px;
+    margin-top: -300px;}
+}
+
 
 
 /* CSS of button over video */
 
 
 .outer-container {
-    border: 1px dotted white;
+    
     width: 100%;
     height: 100%;
     text-align: center;
+    
 }
 .inner-container {
-    border: 1px solid white;
+
     display: inline-block;
     position: relative;
+    
+  
+    
 }
 .video-overlay {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    margin: 10px;
-    padding: 5px 5px;
+    position:absolute;
+    left: auto;
+    top: auto;
+    margin: auto;
+    padding: auto;
     font-size: 20px;
     font-family: Helvetica;
     color: #FFF;
     background-color:transparent;
-    margin-left: 100px;
+    
+   margin-left: 100px;
     margin-top:270px;
+    
+
+    
 }
 video {
     width:100%;
     height: 100%;
+    
+    
+    
 }
 
 
@@ -767,7 +842,23 @@ p {
 .gen1 {
   width:250px;
   height: 125px;
-  margin-left: 350px;
+  margin-left: 350px;}
+
+  @media only screen and (min-width: 480px) and (max-width: 767px){
+    .gen1{width:50%;
+    
+    margin-left:170px;
+    
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .gen1{width:50%;
+    
+    margin-left:170px;
+    
+}
+
 }
 
 
