@@ -32,10 +32,16 @@
   
  
 <header>
+
+  <div class="toggle-btn" onclick="myFunction();">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   
     <div class="container">
         <a href="index.html"> <img src="acp.png" alt="logo" class="logo" > </a> 
-<nav>
+<nav id="nav">
 
  <ul>
 <li><a style="text-decoration: none" href="index.html" >Home</a></li>
@@ -53,7 +59,13 @@
 </div>
 </header>
 
+<script type="text/javascript">
 
+  function myFunction() {
+    var navbar = document.getElementById('nav');
+    navbar.classList.toggle('show');
+  }
+</script>
 
 
 
@@ -327,7 +339,10 @@ html,body
 
      header {
         background: rgba (0, 0, 0, 0 );
-        width:100%
+        width:100%;
+        display: inline-block;
+        padding:25px 80px;
+        position: relative;
      }
 
     header::after{
@@ -336,14 +351,53 @@ html,body
         clear: both; 
     }
 
+
+    .toggle-btn {
+width: 35px;
+position: absolute;
+right: 80px;
+top:40px;
+display: none;
+}
+
+.toggle-btn span{
+display: inline-block;
+width: 100%;
+height: 2px;
+background-color: #000000;
+float: left;
+margin-bottom: 8px;
+}
+
+@media (max-width: 991px) {
+  .toggle-btn{
+    display: block;
+  }
+  nav {
+    display: none;
+    width: 100%;
+    
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  nav ul li {
+    padding: 15px 0px;
+    width: 100%;
+  }
+  nav.show {
+    display: block;
+  }
+}
+
      nav {
-        float:none;
+        float:right;
         text-align:right;
         word-spacing: 70px;
         background: rgba(0, 0, 0, 0.0);
      }
 
      nav ul {
+      display: inline-block;
          margin: 0;
          padding: 0;
          list-style: none;   
@@ -361,6 +415,7 @@ html,body
      nav a {
         color:black;
         text-decoration:none ;
+        display: inline-block;
         
      }
 
@@ -384,9 +439,8 @@ margin-top: -15px;
     
    nav a:hover::before{
       width:100%;
-
-
-      }
+    }
+    
     
 
 
