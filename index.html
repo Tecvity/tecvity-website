@@ -76,6 +76,7 @@
       
       <h3>Creative Technological Solutions</h3>
       <p3>We see what others don't  |  We delivers what others won't</p3>
+      
       <button class="button-64" type="button" onclick="location.href='#tm-section-4'"><span class="text"> LET'S TALK   ➣ </span></button></div>
 <video autoplay muted loop id="myVideo">
    <source src="matrix3.mp4" type="video/mp4" ></video>
@@ -796,16 +797,13 @@ body { font-family: sans-serif; }
   box-shadow: rgba(8, 241, 86, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
   color: #FFFFFF;
-
-  flex: 0 0 auto;
-
   display: flex;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
   justify-content:center;
   line-height: 1em;
-  max-width: 100%;
-  min-width: 100px;
+  max-width: 50%;
+  min-width: 50px;
   padding: 3px;
   text-decoration: none;
   user-select: none;
@@ -814,7 +812,7 @@ body { font-family: sans-serif; }
   white-space: nowrap;
   cursor: pointer;
   height: 55px;
-  width: 40px auto;
+  width: 40px;
   margin-top: 20px;
   
 }
@@ -839,23 +837,27 @@ body { font-family: sans-serif; }
 
 @media (min-width: 768px) {
   .button-64 {
-    width:60%;
+    width:100%;
     font-size: 24px;
     min-width: 196px;
+    align-items: center;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
-  .button-64{width:60%;
+  .button-64{width:100%;
   margin-left: -50px;
   margin-top: -300px;
+  align-items: center;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
-  .button-64{width:40%;
+  .button-64{width:100%;
     margin-left: -50px;
-    margin-top: -300px;}
+    margin-top: -300px;
+    align-items: center;
+  }
 }
 
 
@@ -868,6 +870,8 @@ body { font-family: sans-serif; }
     width: 100%;
     height: 100%;
     text-align: center;
+
+  
     
 }
 .inner-container {
@@ -918,6 +922,10 @@ p3 {
 
 
 }
+
+
+
+ 
 
 
 
