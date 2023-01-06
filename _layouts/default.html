@@ -84,9 +84,23 @@
     </header>
 
     <script type="text/javascript">
+      window.onscroll = function () {
+        myFunction();
+      };
       function myFunction() {
         var navbar = document.getElementById("nav");
         navbar.classList.toggle("show");
+
+        //Code to make the navbar sticky (not working at the moment)
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
       }
     </script>
     <section>{{content}}</section>
@@ -180,7 +194,7 @@
 
     <!-- Contact us -->
     {%include contact-form.html%}
-    <div class="footer-dark">
+    <!-- <div class="footer-dark">
       <footer>
         <div class="container">
           <div class="row">
@@ -234,11 +248,11 @@
           <p class="copyright">Tecvity © 2023</p>
         </div>
       </footer>
-    </div>
-    <!-- {% include footer.html %} -->
+    </div> -->
+    {% include footer.html %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <!-- These imports when removed breaks the next and previous button of carousel -->
+    <!-- These imports when removed breaks the next and previous button of carousel, need to research and fix the imports. -->
   </body>
 
   <style>
@@ -951,11 +965,11 @@
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    p {
+    /* p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: bold;
       color: wheat;
-    }
+    } */
 
     .gen1 {
       width: 250px;
