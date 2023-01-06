@@ -269,146 +269,71 @@
     </div>
 
     <!-- Contact us -->
-    <section id="tm-section-4" class="tm-section">
-      <div class="tm-bg-transparent-black tm-contact-box-pad">
-        <div class="row mb-4">
-          <div class="col-sm-12">
-            <header><h15 class="tm-text-shadow"></h15></header>
-          </div>
-        </div>
-        <div class="row tm-page-4-content">
-          <div class="col-md-6 col-sm-12 tm-contact-col">
-            <div class="contact_message">
-              <form
-                action="https://docs.google.com/forms/d/e/1FAIpQLSdf58Yu2DqJ8vo5nq6Ag8XToOvJMCOu2uTmGqHcAVMeQebyvA/formResponse?embedded=true"
-                method="post"
-                class="contact-form"
-              >
-                <div class="form-group">
-                  <input
-                    type="text"
-                    id="contact_name"
-                    name="entry.2005620554"
-                    class="form-control"
-                    placeholder="Name"
-                    required=""
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    id="contact_email"
-                    name="entry.1120180646"
-                    class="form-control"
-                    placeholder="Email"
-                    required=""
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    id="contact_message"
-                    name="entry.839337160"
-                    class="form-control"
-                    rows="9"
-                    placeholder="Message"
-                    required=""
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn tm-btn-submit tm-btn ml-auto">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 tm-contact-col">
-            <div class="tm-address-box">
-              <h20>Email</h20>
-              <p>
-                <a href="mailto:hello@tecvity.co">hello@tecvity.co</a>
-              </p>
-
-              <h21>Contact</h21>
-              <p><a href="tel:+92 308 8438 733">+92 308 8438 733</a></p>
-              <br />
-
-              <h22> You can also visit us here: </h22>
-              <br />
-
-              <p>
-                <a href="https://mastodon.world/@tecvity" target="_blank"
-                  >Mastodon</a
-                >
-              </p>
-
-              <p>
-                <a
-                  href="https://www.linkedin.com/company/80539034/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </p>
-
-              <img src="/assets/images/logo-green.png" class="gen1" id="gen1" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <head>
-  <link rel="stylesheet" href="/assets/css/contact-form.css" />
+    <head>
+  <link rel="stylesheet" href="/assets/css/contact-form.css"
 </head>
-<div class="background">
+<section id="tm-section-4" class="contact-us-section">
+  <h1 class="w3-center p-3 mb-2 bg-success text-white" id="w3-center">
+    Contact Us!
+  </h1>
   <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
-        </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
+    <div class="row mb-4">
+      <div class="col-sm-12">
+        <header><h15 class="tm-text-shadow"></h15></header>
       </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
-          </div>
+    </div>
 
-          <div class="app-contact">Email Us : hello@tecvity.co</div>
-        </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input
-                class="app-form-control"
-                placeholder="NAME"
-              />
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL" />
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO" />
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE" />
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
+    <div class="row clearfix">
+      <div class="col-md-6 col-md-offset-3 column">
+        <form
+          role="form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSdf58Yu2DqJ8vo5nq6Ag8XToOvJMCOu2uTmGqHcAVMeQebyvA/formResponse?embedded=true"
+          method="post"
+          class="contact-us-form"
+        >
+          <legend class="mb-3">How can we help you?</legend>
+          <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="contact_name"
+              name="entry.2005620554"
+              class="form-control"
+              required=""
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Email address</label>
+
+            <input
+              type="email"
+              id="contact_email"
+              name="entry.1120180646"
+              class="form-control"
+              required=""
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
             </div>
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="Message" class="form-label">Message</label>
+            <textarea
+              id="contact_message"
+              name="entry.839337160"
+              class="form-control"
+              rows="9"
+              required=""
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
       </div>
     </div>
   </div>
-</div>
- -->
+</section>
+
     <div class="footer-dark">
       <footer>
         <div class="container">
@@ -1214,31 +1139,12 @@
       }
     }
 
-    /* Contact us */
-
-    .tm-section {
-      max-width: 100%;
-      width: auto;
-      background-image: linear-gradient(
-        144deg,
-        #06a813,
-        yellowgreen 50%,
-        #059b00
-      );
-      margin-top: 80px;
-      margin-bottom: 0px;
-      border-radius: 8px;
-    }
-
     .col-md-6.tm-contact-col {
       margin-bottom: 0;
     }
 
     .tm-img-slider {
       max-width: 940px;
-    }
-    #tm-section-1 {
-      max-width: 700px;
     }
 
     .tm-icon-media {
