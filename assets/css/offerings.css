@@ -9,7 +9,7 @@
   padding-top: 10%;
   margin-bottom: 60px;
   font-weight: 600%;
-  position: relative;
+  /* position: relative; */
 }
 
 .container2 h1::after {
@@ -17,7 +17,7 @@
   background: limegreen;
   width: 300px;
   height: 2px;
-  position: absolute;
+  /* position: absolute; */
   bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
