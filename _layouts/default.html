@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/d825372d40.js"
+      crossorigin="anonymous"
+    ></script>
+    {% include google-analytics.html %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{page.title}}</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/visby" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+
+    <script type="text/javascript">
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("nav");
+        navbar.classList.toggle("show");
+
+        //Code to make the navbar sticky (not working at the moment)
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      }
+    </script>
+    {% include navbar.html %}
+    <section>{{content}}</section>
+
+    {% include offerings.html %}
+
+    <!-- <div class="carousel" data-flickity='{ "draggable": false }'>
+        <div class="carousel-cell">
+          <img
+            class="w3-image"
+            src="/assets/images/portfolio/terravirtua.jpg"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="w3-image"
+            src="/assets/images/portfolio/dinghysailing.jpg"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img class="w3-image" src="/assets/images/portfolio/techontap.jpg" />
+        </div>
+      </div> -->
+    {% include carousel.html %}
+
+    <div>
+      <a style="text-decoration: none" href="/pages/portfolio.html">
+        <button class="button-41" role="button" type="button">
+          View More ➢
+        </button>
+      </a>
+    </div>
+
+    <!-- Contact us -->
+    {%include contact-form.html%}
+    <!-- <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="/pages/services/UI-UX.html">UI/UX</a></li>
+                <li>
+                  <a href="/pages/services/web-development.html"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/services/mobile-dev.html"
+                    >Mobile App Development</a
+                  >
+                </li>
+                <li>
+                  <a href="/pages/services/graphic-designing.html"
+                    >Graphic Designing</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="/pages/about.html">Company</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Career</h3>
+              <ul>
+                <li><a href="/pages/jobs.html" target="_blank">Jobs</a></li>
+              </ul>
+            </div>
+
+            <div class="col item social">
+              <a
+                href="https://www.linkedin.com/company/80539034/"
+                target="_blank"
+                ><i class="icon ion-social-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/tecvity" target="_blank"
+                ><i class="icon ion-social-twitter"></i
+              ></a>
+            </div>
+          </div>
+          <p class="copyright">Tecvity © 2023</p>
+        </div>
+      </footer>
+    </div> -->
+    {% include footer.html %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> -->
+    <!-- These imports when removed breaks the next and previous button of carousel, need to research and fix the imports. -->
+  </body>
+
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      background: white;
+      font-family: "VisbyCF-Light.otf";
+      font-weight: "Courier New", Courier, monospace;
+    }
+
+    .logo {
+      float: left;
+      width: 10%;
+      margin-top: 13px;
+      margin-left: -99px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .logo {
+        width: 30%;
+
+        float: left;
+        margin-left: -99px;
+        margin-top: 1px;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .logo {
+        width: 30%;
+
+        float: left;
+        margin-left: -99px;
+        margin-top: 1px;
+      }
+    }
+
+    @media only screen and (min-width: 1100px) and {
+      .logo {
+        width: 30%;
+
+        float: left;
+        margin-left: -99px;
+        margin-top: 1px;
+      }
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: rgba (0, 0, 0, 0);
+      width: 100%;
+      display: inline-block;
+      padding: 5px 80px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .toggle-btn {
+      width: 35px;
+      position: absolute;
+      right: 30px;
+      top: 2px;
+      display: none;
+    }
+
+    .toggle-btn span {
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+      float: left;
+      margin-bottom: 8px;
+    }
+
+
+    /* Style the video: 100% width and height to cover the entire window
+ #myVideo {
+
+ position:relative;
+   right: 0;
+   bottom: 0;
+   max-width: 100%;
+   max-height: 30%;
+
+ }
+ */
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
+    }
+
+    /* external css: flickity.css */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .carousel {
+      object-fit: cover;
+      background: transparent;
+    }
+
+    .carousel-cell {
+      margin: 60px;
+      background: transparent;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+    }
+
+    .w3-center {
+      text-align: center;
+      font-family: "VisbyCF-RegularOblique.otf";
+    }
+    /*
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .w3-center {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 400px;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .w3-center {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 400px;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .carousel-cell {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .carousel-cell {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    } */
+
+    .footer-dark {
+      padding: 50px 0;
+      color: #f0f9ff;
+      background-color: #282d32;
+    }
+
+    .footer-dark h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      
+    }
+
+    .footer-dark ul {
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .footer-dark ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+    }
+
+    .footer-dark ul a:hover {
+      opacity: 0.8;
+    }
+
+    /* @media (max-width: 767px) {
+      .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+    } */
+
+    .footer-dark .item.text {
+      margin-bottom: 36px;
+    }
+
+    /* @media (max-width: 767px) {
+      .footer-dark .item.text {
+        margin-bottom: 0;
+      }
+    } */
+
+    /* .footer-dark .item.text p {
+      opacity: 0.6;
+      margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+      text-align: center;
+    } */
+
+    /* @media (max-width: 991px) {
+      .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+      }
+    } */
+
+    /* .footer-dark .item.social > a {
+      font-size: 20px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+      margin: 0 8px;
+      color: #fff;
+      opacity: 0.75;
+    }
+
+    .footer-dark .item.social > a:hover {
+      opacity: 0.9;
+    }
+
+    .footer-dark .copyright {
+      text-align: center;
+      padding-top: 24px;
+      opacity: 0.3;
+      font-size: 13px;
+      margin-bottom: 0;
+    } */
+
+    /* CSS of button */
+    .button-64 {
+      z-index: 1;
+      align-items: center;
+      background-image: linear-gradient(144deg, #04740d, #48f342 50%, #044709);
+      border: 0;
+      border-radius: 1px;
+      box-shadow: rgba(8, 241, 86, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #ffffff;
+      display: flex;
+      font-family: "VisbyCF-BoldOblique.otf";
+      font-size: 15px;
+      justify-content: center;
+      line-height: 1em;
+      max-width: 50%;
+      min-width: 50px;
+      padding: 3px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+      height: 55px;
+      width: 40px;
+      margin-top: 20px;
+    }
+
+    .button-64:active,
+    .button-64:hover {
+      outline: 0;
+    }
+
+    .button-64 span {
+      background-color: rgb(5, 6, 45);
+      padding: 16px 24px;
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      transition: 300ms;
+    }
+
+    .button-64:hover span {
+      background: none;
+    }
+
+    @media (min-width: 768px) {
+      .button-64 {
+        width: 90%;
+        font-size: 18px;
+        min-width: 150px;
+        margin-left: 10px;
+        margin-top: 40px;
+        align-items: center;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      .button-64 {
+        width: 90%;
+        font-size: 18px;
+        min-width: 150px;
+        margin-left: -65px;
+        margin-top: -130px;
+        align-items: center;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .button-64 {
+        width: 90%;
+        font-size: 18px;
+        min-width: 150px;
+        margin-left: -65px;
+        margin-top: -130px;
+        align-items: center;
+      }
+    }
+
+    /* logos above text */
+    h3 {
+      font-family:"VisbyCF-Bold.otf";
+    }
+
+    p4 {
+      font-size: medium;
+      font-family:  "VisbyCF-Light.otf";
+      font-weight: lighter;
+      margin-left: -65px;
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      h3 {
+        /* position: absolute; */
+        float: left;
+        font-size: medium;
+        align-items: center;
+        width: auto;
+        margin-left: -85px;
+        margin-top: -200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      h3 {
+        /* position: absolute; */
+        float: left;
+        font-size: medium;
+        align-items: center;
+        width: auto;
+        margin-left: -85px;
+        margin-top: -200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      p4 {
+        /* position: absolute; */
+        float: left;
+        font-size: small;
+        align-items: center;
+        width: auto;
+        margin-left: -130px;
+        margin-top: -180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      p4 {
+        /* position: absolute; */
+        float: left;
+        font-size: small;
+        align-items: center;
+        width: auto;
+        margin-left: -130px;
+        margin-top: -180px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+    }
+
+    .col-md-6.tm-contact-col {
+      margin-bottom: 0;
+    }
+
+    .tm-img-slider {
+      max-width: 940px;
+    }
+
+    .tm-icon-media {
+      margin-right: 1.5rem;
+      margin-bottom: 0;
+    }
+
+    address {
+      font-size: 1rem;
+    }
+    .form-control {
+      background: transparent;
+      border-color: yellowgreen;
+      color: white;
+      font-weight: 300;
+      border-radius: 0;
+      padding: 15px;
+    }
+
+    .form-control:focus {
+      background: transparent;
+      background-image: linear-gradient(
+        144deg,
+        #06a813,
+        yellowgreen 50%,
+        #09ff00
+      );
+      border-color: #000000;
+      box-shadow: none;
+    }
+
+    ::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
+    }
+
+    :-moz-placeholder {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
+    }
+
+    ::-moz-placeholder {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
+    }
+
+    :-ms-input-placeholder {
+      color: rgba(255, 255, 255, 1) !important;
+      opacity: 1;
+    }
+
+    .tm-page-4-content {
+      padding-left: 50px;
+    }
+
+    .btn {
+      color: yellowgreen;
+      background-color: black;
+      font-family: "VisbyCF-BoldOblique.otf";
+      border-radius: 0;
+      margin-bottom: 20px;
+
+      text-align: inherit;
+      text-align: justify;
+    }
+
+    h20,
+    h21,
+    h22 {
+      font-size: larger;
+      font-family: "VisbyCF-ExtraBold.otf";
+    }
+
+    /* p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      color: wheat;
+    } */
+
+
+    /* CSS of  button portfolio/featured work */
+    .button-41 {
+      display: block;
+      margin: auto;
+      margin-top: 10px;
+      background-color: limegreen;
+      border: 1px solid transparent;
+      border-radius: 0.1rem;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      flex: 0 0 auto;
+      font-family: "Inter var", ui-sans-serif, system-ui, -apple-system,
+        system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      min-height: 30px;
+      padding: 0.75rem 1.2rem;
+      text-align: center;
+      text-decoration: none #6b7280 solid;
+      text-decoration-thickness: auto;
+      transition-duration: 0.2s;
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: auto;
+    }
+
+    .button-41:hover {
+      background-color: lime;
+    }
+
+    .button-41:focus {
+      box-shadow: none;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+
+
+  </style>
+</html>
