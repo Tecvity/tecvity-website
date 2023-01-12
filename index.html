@@ -1,47 +1,20 @@
 ---
-title: Tecvity
 layout: default
 ---
 
-<head>
-  <link rel="stylesheet" href="/assets/css/index.css" />
-</head>
-<!-- <div class="outer-container">
-  <div class="inner-container">
-    <div class="video-overlay">
-      <h3>Creative Technological Solutions</h3>
-      <p4>We see what others don't | We delivers what others won't</p4>
+<div class="home">
 
-      <button
-        class="button-64"
-        type="button"
-        onclick="location.href='#tm-section-4'"
-      >
-        <span class="text"> LET'S TALK ➣ </span>
-      </button>
-    </div>
-    <video autoplay muted loop id="myVideo">
-      <source src="/assets/videos/matrix.mp4" type="video/mp4" />
-    </video>
-  </div>
-</div> -->
+  <h1>Posts</h1>
 
-<div class="container-fluid ">
-  <div class="inner-container ">
-    <div class="video-overlay">
-      <h3>Creative Technological Solutions</h3>
-      <p4>We see what others don't | We delivers what others won't</p4>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-      <button
-        class="button-64"
-        type="button"
-        onclick="location.href='#tm-section-4'"
-      >
-        <span class="text"> LET'S TALK ➣ </span>
-      </button>
-    </div>
-    <video autoplay muted loop id="myVideo">
-      <source src="/assets/videos/matrix.mp4" type="video/mp4" />
-    </video>
-  </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
