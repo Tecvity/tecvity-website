@@ -28,7 +28,43 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-{% include navbar.html %}
+    <header>
+      <div class="container">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" alt="logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a style="text-decoration: none" href="/index.html">Home</a>
+            </li>
+            <li>
+              <a style="text-decoration: none" href="/pages/about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a style="text-decoration: none" href="/pages/services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a style="text-decoration: none" href="#w3-center">Portfolio</a>
+            </li>
+
+            <!-- HTML button within navbar !-->
+            <button
+              class="button-40"
+              role="button"
+              type="button"
+              onclick="location.href='#tm-section-4'"
+            >
+              Contact Now
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section>{{content}}</section>
 
 {% include offerings.html %}

@@ -26,10 +26,52 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
     />
-    <link href="https://fonts.cdnfonts.com/css/visby" rel="stylesheet">
   </head>
   <body>
     <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+    <header>
+      <div class="toggle-btn" onclick="myFunction();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="container">
+        <a href="/index.html">
+          <img src="/assets/images/logo.png" alt="logo" class="logo" />
+        </a>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a style="text-decoration: none" href="/index.html">Home</a>
+            </li>
+            <li>
+              <a style="text-decoration: none" href="/pages/about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a style="text-decoration: none" href="/pages/services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a style="text-decoration: none" href="#w3-center">Portfolio</a>
+            </li>
+
+            <!-- HTML button within navbar !-->
+            <button
+              class="button-40"
+              role="button"
+              type="button"
+              onclick="location.href='#tm-section-4'"
+            >
+              Contact Now
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <script type="text/javascript">
       window.onscroll = function () {
@@ -51,7 +93,6 @@
         }
       }
     </script>
-    {% include navbar.html %}
     <section>{{content}}</section>
 
     {% include offerings.html %}
@@ -164,7 +205,8 @@
     body {
       margin: 0;
       background: white;
-      font-family: "VisbyCF-Light.otf";
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       font-weight: "Courier New", Courier, monospace;
     }
 
@@ -241,6 +283,121 @@
       margin-bottom: 8px;
     }
 
+    @media (max-width: 1100px) {
+      .toggle-btn {
+        display: block;
+      }
+      nav {
+        display: none;
+        width: 100%;
+
+        padding-top: 20px;
+        margin-top: 30px;
+      }
+      nav ul li {
+        padding: 15px 0px;
+        width: 100%;
+      }
+      nav.show {
+        display: block;
+      }
+
+      nav {
+        float: right;
+        text-align: right;
+        word-spacing: 70px;
+        background: rgba(0, 0, 0, 0);
+      }
+
+      nav ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 5px;
+        position: relative;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        color: green;
+      }
+
+      nav a::before {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: limegreen;
+        position: absolute;
+        top: 0;
+        width: 0%;
+        transition: all ease-in-out 150ms;
+        margin-top: -15px;
+      }
+
+      nav a:hover::before {
+        width: 100%;
+      }
+    }
+
+    nav {
+      float: right;
+      text-align: right;
+      word-spacing: 70px;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    nav ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 5px;
+      position: relative;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: green;
+    }
+
+    nav a::before {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: limegreen;
+      position: absolute;
+      top: 0;
+      width: 0%;
+      transition: all ease-in-out 150ms;
+      margin-top: -15px;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
 
     /* Style the video: 100% width and height to cover the entire window
  #myVideo {
@@ -284,7 +441,7 @@
 
     .w3-center {
       text-align: center;
-      font-family: "VisbyCF-RegularOblique.otf";
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
     /*
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -330,7 +487,6 @@
       margin-bottom: 12px;
       font-weight: bold;
       font-size: 16px;
-      
     }
 
     .footer-dark ul {
@@ -421,7 +577,8 @@
       box-sizing: border-box;
       color: #ffffff;
       display: flex;
-      font-family: "VisbyCF-BoldOblique.otf";
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
       font-size: 15px;
       justify-content: center;
       line-height: 1em;
@@ -492,12 +649,12 @@
 
     /* logos above text */
     h3 {
-      font-family:"VisbyCF-Bold.otf";
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     p4 {
       font-size: medium;
-      font-family:  "VisbyCF-Light.otf";
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: lighter;
       margin-left: -65px;
     }
@@ -626,7 +783,7 @@
     .btn {
       color: yellowgreen;
       background-color: black;
-      font-family: "VisbyCF-BoldOblique.otf";
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       border-radius: 0;
       margin-bottom: 20px;
 
@@ -638,7 +795,7 @@
     h21,
     h22 {
       font-size: larger;
-      font-family: "VisbyCF-ExtraBold.otf";
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     /* p {
@@ -647,6 +804,59 @@
       color: wheat;
     } */
 
+    .gen1 {
+      width: 250px;
+      height: 125px;
+      margin-left: 350px;
+    }
+
+
+
+    /* CSS of  button within navbar green limegreen */
+    .button-40 {
+      background-color: limegreen;
+      border: 1px solid transparent;
+      border-radius: 0.1rem;
+      box-sizing: border-box;
+      color: #ffffff;
+      cursor: pointer;
+      flex: 0 0 auto;
+      font-family: "Inter var", ui-sans-serif, system-ui, -apple-system,
+        system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      min-height: 30px;
+      padding: 0.75rem 1.2rem;
+      text-align: center;
+      text-decoration: none #6b7280 solid;
+      text-decoration-thickness: auto;
+      transition-duration: 0.2s;
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: auto;
+    }
+
+    .button-40:hover {
+      background-color: lime;
+    }
+
+    .button-40:focus {
+      box-shadow: none;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+
+    @media (min-width: 768px) {
+      .button-40 {
+        padding: 0.75rem 1.5rem;
+      }
+    }
 
     /* CSS of  button portfolio/featured work */
     .button-41 {
@@ -691,6 +901,10 @@
       outline-offset: 2px;
     }
 
-
+    @media (min-width: 768px) {
+      .button-40 {
+        padding: 0.75rem 1.5rem;
+      }
+    }
   </style>
 </html>
