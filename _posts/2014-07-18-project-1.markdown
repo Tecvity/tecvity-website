@@ -1,15 +1,15 @@
 ---
-title: Terra Virtua
-subtitle: Full Stack Development
+title: Dinghy Sailing
+subtitle: Web Development
 layout: default
 modal-id: 1
-date: 2022-02-2
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+#date: 2022-02-2
+img: dinghysailing.jpg
+thumbnail: dinghysailing.jpg
 alt: image-alt
-project-date: April 2014
-client: Terra Virtua
+#project-date: April 2014
+client: Tomas Sandstorm
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: A blog made for Dinghy hobbyists, the technology used to build this project is .NET
 
 ---
