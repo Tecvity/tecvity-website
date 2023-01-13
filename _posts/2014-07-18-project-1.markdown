@@ -1,14 +1,14 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Terra Virtua
+subtitle: Full Stack Development
 layout: default
 modal-id: 1
-date: 2014-07-18
+date: 2022-02-2
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: April 2014
-client: Start Bootstrap
+client: Terra Virtua
 category: Web Development
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
