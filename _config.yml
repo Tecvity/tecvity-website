@@ -31,15 +31,11 @@ people:
     #     url: #
 
   - name: Tayyab Ahmed
-    pic: 3
+    pic: tayyab
     position: Creative Director
-    # social:
-    #   - title: twitter
-    #     url: #
-    #   - title: facebook
-    #     url: #
-    #   - title: google-plus
-    #     url: #
+    social:
+      - title: linkedin
+        url: tayyub-ahmed
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
