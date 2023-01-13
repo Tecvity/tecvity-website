@@ -9,47 +9,46 @@ description: "Write an awesome description for your new site here. You can edit 
 # Team names, titles and social links
 people:
   - name: Najam Ul Saqib
-    pic: 1
-    position: Cheif Executive Officer (CEO)
-    social:
-      - title: twitter
-        url: #
-      - title: facebook
-        url: #
-      - title: stack-overflow
-        url: #
+    pic: najam
+    position: Chief Executive Officer (CEO)
+    # social:
+    #   - title: twitter
+    #     url: #
+    #   - title: facebook
+    #     url: #
+    #   - title: stack-overflow
+    #     url: #
 
   - name: Moeez Ahmed
-    position: Cheif Technological Officer (CTO)
-    social:
-      - title: twitter
-        url: #
-      - title: facebook
-        url: #
-      - title: linkedin
-        url: #
+    position: Chief Technological Officer (CTO)
+    pic: 2
+    # social:
+    #   - title: twitter
+    #     url: #
+    #   - title: facebook
+    #     url: #
+    #   - title: linkedin
+    #     url: #
 
   - name: Tayyab Ahmed
     pic: 3
     position: Creative Director
-    social:
-      - title: twitter
-        url: #
-      - title: facebook
-        url: #
-      - title: google-plus
-        url: #
+    # social:
+    #   - title: twitter
+    #     url: #
+    #   - title: facebook
+    #     url: #
+    #   - title: google-plus
+    #     url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/tecvity
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: https://twitter.com/tecvity
+  - title: instagram
+    url: https://instagram.com/tecvity
+  - title: linkedin
+    url: https://www.linkedin.com/company/80539034
   - title: github
     url: http://github.com/tecvity
 
