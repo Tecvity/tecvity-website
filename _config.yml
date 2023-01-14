@@ -4,7 +4,7 @@
 # Site settings
 title: Tecvity
 email: hello@tecvity.co
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "A one stop solution for all your software needs. We offer services in web and mobile app design and development. Find out more on our website."
 
 # Team names, titles and social links
 people:
@@ -21,7 +21,7 @@ people:
 
   - name: Moeez Ahmed
     position: Chief Technological Officer (CTO)
-    pic: 2
+    pic: profile-placeholder
     # social:
     #   - title: twitter
     #     url: #
