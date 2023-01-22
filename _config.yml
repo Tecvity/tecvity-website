@@ -22,9 +22,9 @@ people:
   - name: Moeez Ahmed
     position: Chief Technological Officer (CTO)
     pic: moeez
-    # social:
-    #   - title: twitter
-    #     url: #
+    social:
+      - title: linkedin
+        url: https://www.linkedin.com/in/moeezahmed99/
     #   - title: facebook
     #     url: #
     #   - title: linkedin
