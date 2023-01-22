@@ -10,7 +10,8 @@
     rel="canonical"
     href="{{ page.url | replace:'index.html',''| prepend: site.url }}"
   />
-
+  <!-- The following line is OG tag to add thumbnail to website, if not working remove it -->
+  <meta property="og:image" content="/favicon.ico" />
   <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
   <link rel="stylesheet" href="{{ "/style.css" }}">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
