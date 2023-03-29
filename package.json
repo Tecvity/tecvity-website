@@ -1,5 +1,6 @@
 {
   "name": "tecvityreact",
+  "homepage": "http://tecvity.github.io/tecvity.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,6 @@
     "swiper": "^9.1.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://Tecvity.github.io/tecvity.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
