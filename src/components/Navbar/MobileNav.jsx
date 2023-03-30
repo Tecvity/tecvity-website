@@ -6,7 +6,7 @@ const MobileNav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-green-400 via-green-700 font-first to-green-900 w-full h-full">
+    <div className="bg-main font-first w-full h-full">
       <ul className="h-full flex flex-col justify-center items-center gap-y-8">
         {nav.map((item, index) => {
           const { href, name } = item;
