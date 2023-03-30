@@ -6,7 +6,7 @@ import FeaturedWork from "./pages/FeaturedWork";
 import Footer from "./components/Footer";
 import { ContactUs } from "./pages/ContactUs";
 import Vision from "./pages/Vision";
-import Values from "./pages/Values";
+// import Values from "./pages/Values";
 
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         <Services />
         <FeaturedWork />
         <Vision />
-        <Values />
+        {/* <Values /> */}
         <ContactUs />
         <Footer />
       </Router>
