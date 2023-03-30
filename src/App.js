@@ -10,6 +10,7 @@ import About from './pages/About';
 import ContactUs from "./components/ContactUs";
 // import Vision from "./pages/Vision";
 import Home from "./pages/Home";
+import Portfolio from './pages/Portfolio';
 // import Values from "./pages/Values";
 
 export default function App() {
@@ -21,6 +22,9 @@ export default function App() {
       </Routes>
       <Routes>
         <Route path="/about" element={ <About /> } />
+      </Routes>
+      <Routes>
+        <Route path="/portfolio" element={ <Portfolio /> } />
       </Routes>
      <ContactUs />
       <Footer />
