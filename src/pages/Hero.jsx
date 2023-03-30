@@ -24,13 +24,13 @@ function Hero() {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
         className="font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-white text-center items-center flex flex-col">
-        <h1 className="bg-gradient-to-r from-green-500 bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-green-500 lg:text-7xl">
+        <h1 className="bg-gradient-to-r from-main bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-main lg:text-7xl">
           Creative Technological Solutions
         </h1>
-        <p className="text-2xl py-4 text-white hover:text-green-500">
+        <p className="text-2xl py-4 text-white hover:text-main">
           Wee see what others don't
         </p>
-        <p className="text-2xl py-4 text-white hover:text-green-500">
+        <p className="text-2xl py-4 text-white hover:text-main">
           We deliver what other won't
         </p>
         <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
@@ -50,7 +50,7 @@ function Hero() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}>
-        <h1 className="text-green-500 text-center pt-48 mt-20 lg:pb-10  font-first text-3xl lg:text-7xl">
+        <h1 className="text-main text-center pt-48 mt-20 lg:pb-10  font-first text-3xl lg:text-7xl">
           What Tecvity Offers?
         </h1>
       </motion.div>

@@ -25,7 +25,7 @@ const FeaturedWork = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}>
-          <h1 className="text-green-500 text-center pt-24 lg:pb-10  font-first text-3xl lg:text-7xl">
+          <h1 className="text-main text-center pt-24 lg:pb-10  font-first text-3xl lg:text-7xl">
             Featured Work
           </h1>
         </motion.div>

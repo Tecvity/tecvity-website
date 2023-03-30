@@ -22,7 +22,7 @@ const Vision = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="font-first flex flex-col text-center lg:text-left text-green-500 lg:w-1/2  lg:py-8">
+        className="font-first flex flex-col text-center lg:text-left text-main lg:w-1/2  lg:py-8">
         <h1 className="text-5xl lg:text-8xl mb-8 mt-14  lg:mb-12">Our Vision</h1>
         <p className="text-lg mr-0 lg:mr-24 text-white">
           Our vision is to spread the power of technology across the globe. We

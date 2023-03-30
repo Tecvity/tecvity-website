@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-green-400 via-green-700 to-green-900 font-first  py-12">
+    <footer className="bg-gradient-to-b from-main via-green-700 to-green-900 font-first  py-12">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 text-white md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>

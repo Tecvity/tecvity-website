@@ -34,7 +34,7 @@ const Values = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
         className="flex  flex-col lg:flex-row justify-center space-y-6  mt-8 space-x-8">
-        <div className="flex flex-col lg:flex-row justify-center space-y-6 space-x-8">
+        <div className="flex flex-col lg:flex-row justify-center items-center space-y-6 space-x-8">
           <div></div>
           <Card
             icon={FaLightbulb}

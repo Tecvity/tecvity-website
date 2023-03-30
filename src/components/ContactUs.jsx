@@ -44,7 +44,7 @@ export const ContactUs = () => {
       <section className="text-white bg-black mb-16 font-first flex">
         <div className="px-5 py-24 mx-auto">
           <motion.div variants={fadeIn('left', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-4xl lg:text-7xl mb-4 lg:mb-12 text-green-500">
+            <h1 className="sm:text-4xl lg:text-7xl mb-4 lg:mb-12 text-main">
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed ">
@@ -95,7 +95,7 @@ export const ContactUs = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button typeof="submit" value="send" className="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                <button typeof="submit" value="send" className="flex mx-auto text-black bg-main border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                   Send
                 </button>
               </div>
@@ -105,22 +105,8 @@ export const ContactUs = () => {
         </div>
       </section>
     </div>
-    // FORM SİDE
-    //   <div>
-    //   <div className="bg-green-700">
-    //     <form ref={form} onSubmit={sendEmail}>
-    //       <label>Name</label>
-    //       <input type="text" name="user_name" />
-    //       <label>Email</label>
-    //       <input type="email" name="user_email" />
-    //       <label>Message</label>
-    //       <textarea name="message" />
-    //       <button typeof="submit" value="Send">
-    //         Send
-    //       </button>
-    //     </form>
-    //     <ToastContainer />
-    //   </div>
-    //   </div>
   );
 };
+
+
+export default ContactUs
