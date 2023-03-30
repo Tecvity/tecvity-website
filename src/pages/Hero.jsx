@@ -1,6 +1,6 @@
 import React from "react";
  import Lottie from "lottie-react";
- import button from "../assets/button-green.json";
+ import button from "../assets/mainbutton.json";
  import { motion } from "framer-motion";
  import { fadeIn } from "../variants";
 import BgVideo from "../assets/videos/bgg.mp4";

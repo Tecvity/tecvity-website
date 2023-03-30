@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className="text-white font-first bg-gradient-to-r from-green-500 via-green-700 to-green-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-900 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-3 hidden lg:flex text-center mr-4 mb-4">
+          className="text-black font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-900 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-3 hidden lg:flex text-center mr-4 mb-4">
           Contact Now
         </button>
         {/* cta button - initially hidden - show on desktop mode */}
