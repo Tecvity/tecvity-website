@@ -1,9 +1,8 @@
-// Card.js
 import React from 'react';
 
 const Card = ({ title, description, image }) => {
   return (
-    <div className="max-w-md mx-auto my-12 bg-main rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <div className=" mx-auto my-24 bg-main rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
@@ -12,7 +11,7 @@ const Card = ({ title, description, image }) => {
             alt={title}
           />
         </div>
-        <div className="p-8">
+        <div className="p-8 md:pl-6 md:pt-4">
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
             Technology
           </div>

@@ -1,14 +1,14 @@
-import React from 'react';
-import Card from '../components/BlogCard';
-import Img from '../assets/images/portfolio/dinghysailing.jpg'
+import React from "react";
+import Card from "../components/BlogCard";
+import Img from "../assets/images/portfolio/dinghysailing.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const App = () => {
   return (
-      <div className="p-24">
-           <motion.h1
-        variants={fadeIn("up", 0.5)}
+    <div className="p-24">
+      <motion.h1
+        variants={fadeIn("right", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
@@ -16,30 +16,48 @@ const App = () => {
          text-center text-main ">
         Blog
       </motion.h1>
-      <Card
-        title="How to Build a React App with Tailwind CSS"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      <motion.div
+        variants={fadeIn("left", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}>
+        <Card
+          title="Why Tecvity best?"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
             dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
             dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
             velit."
-        image={Img}
-          />  
-           <Card
-        title="How to Build a React App with Tailwind CSS"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+          image={Img}
+        />
+      </motion.div>
+      <motion.div
+        variants={fadeIn("right", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}>
+        <Card
+          title="Why Tecvity best?"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
             dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
             dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
             velit."
-        image={Img}
-          />  
-           <Card
-        title="How to Build a React App with Tailwind CSS"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+          image={Img}
+        />
+      </motion.div>
+      <motion.div
+        variants={fadeIn("up", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}>
+        <Card
+          title="Why Tecvity best?"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
             dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
             dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
             velit."
-        image={Img}
-          />  
+          image={Img}
+        />
+      </motion.div>
     </div>
   );
 };
