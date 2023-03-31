@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturedWork from './FeaturedWork'
+import FeaturedWork from '../components/FeaturedWork'
 
 function Portfolio() {
   return (

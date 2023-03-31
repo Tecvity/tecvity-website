@@ -1,5 +1,5 @@
 import React from "react";
-import VisionImg from "./../assets/visionlottie.json";
+import VisionImg from "../assets/visionlottie.json";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";

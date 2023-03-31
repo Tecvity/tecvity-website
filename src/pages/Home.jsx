@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../pages/Hero";
-import Services from "../pages/Services";
-import FeaturedWork from "../pages/FeaturedWork";
-import Vision from "../pages/Vision";
+import Hero from "../components/Hero";
+import Services from "../components/Services";
+import FeaturedWork from "../components/FeaturedWork";
+import Vision from "../components/Vision";
 
 function Home() {
   return (

@@ -1,14 +1,16 @@
 import React from "react";
-import Vision from "./Vision";
-import Values from "./Values";
+import Vision from "../components/Vision";
+import Values from "../components/Values";
 import Lottie from "lottie-react";
 import Team from "../assets/team.json";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import AboutHero from "../components/AboutHero";
 
 function About() {
   return (
     <div >
+      < AboutHero />
       <motion.h1
         variants={fadeIn("up", 0.5)}
         initial="hidden"

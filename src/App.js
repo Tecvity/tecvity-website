@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Header from './components/Navbar/Header';
 import About from './pages/About';
 import Blog from './pages/Blog'
-import ContactUs from "./components/ContactUs";
+import ContactUs from "./components/Footer/ContactUs";
 // import Vision from "./pages/Vision";
 import Home from "./pages/Home";
 import Portfolio from './pages/Portfolio';

@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Card from "../components/Card";
+import Card from "./Card";
 
 const Values = () => {
   return (
