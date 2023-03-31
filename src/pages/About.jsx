@@ -8,13 +8,13 @@ import { fadeIn } from "../variants";
 
 function About() {
   return (
-    <div>
+    <div >
       <motion.h1
         variants={fadeIn("up", 0.5)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-7xl lg:text-8xl -mb-8 text-center text-main mt-24">
+        className="text-7xl lg:text-8xl -mb-8 text-center text-main mt-48">
         About Us
       </motion.h1>
       <div className="flex-col bg-black flex mb-24 lg:flex-row lg:justify-center lg:mx-8 my-32">

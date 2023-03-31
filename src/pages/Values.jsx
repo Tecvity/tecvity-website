@@ -19,7 +19,7 @@ const Values = () => {
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
         className="text-center py-8 px-2 font-first ">
-        <h1 className="text-6xl lg:text-7xl py-4 text-green-500 mb-8 mt-24">
+        <h1 className="text-6xl lg:text-7xl py-4 text-main mb-8 mt-24">
           Our Core Values
         </h1>
         <p className="text-lg  text-white ">
@@ -58,8 +58,9 @@ const Values = () => {
             icon={FaRegCheckCircle}
             iconColor="text-purple-300"
             title="Keep Promises"
-            description="We believe that trust is the key in all our relationships and we take pride in delivering with Quality, precision and integrity."
+            description="We believe that trust is the most important key in all our relationships and we take pride in delivering with Quality, precision and integrity."
           />
+          <div></div>
         </div>
       </motion.div>
     </div>

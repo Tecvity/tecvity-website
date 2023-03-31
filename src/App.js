@@ -2,11 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer';
 import Header from './components/Navbar/Header';
 import About from './pages/About';
-// import Header from "./components/Navbar/Header";
-// import Hero from "./pages/Hero";
-// import Services from "./pages/Services";
-// import FeaturedWork from "./pages/FeaturedWork";
-// import Footer from "./components/Footer";
+import Blog from './pages/Blog'
 import ContactUs from "./components/ContactUs";
 // import Vision from "./pages/Vision";
 import Home from "./pages/Home";
@@ -25,6 +21,9 @@ export default function App() {
       </Routes>
       <Routes>
         <Route path="/portfolio" element={ <Portfolio /> } />
+      </Routes>
+      <Routes>
+        <Route path="/blog" element={ <Blog /> } />
       </Routes>
      <ContactUs />
       <Footer />

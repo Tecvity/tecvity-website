@@ -10,7 +10,7 @@ function Home() {
       <Hero />
       <Services />
       <FeaturedWork />
-      <Vision />
+     <Vision />
     </div>
   );
 }
