@@ -35,7 +35,7 @@ const services = [
 
 function WhatWeDo() {
   return (
-    <div id="services" className="font-first">
+    <div id="services" className="font-first pt-64 pb-64">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row ">
           {/* text and image */}
@@ -71,7 +71,7 @@ function WhatWeDo() {
                     className="border-b border-white/20 h-[146px] mb-[38px] flex"
                     key={index}>
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                      <h4 className="text-[20px] text-main tracking-wider font-primary font-semibold mb-6">
                         {name}
                       </h4>
                       <p className="font-secondary leading-tight">

@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import AboutHero from "../components/AboutHero";
 import WhatWeDo from "../components/WhatWeDo";
+import WhatMakesUsExpert from "../components/WhatMakesUsExpert";
 
 function About() {
   return (
@@ -48,9 +49,9 @@ function About() {
         </motion.div>
       </div>
       <Vision />
-      <span></span>
       <Values />
       <WhatWeDo />
+      <WhatMakesUsExpert />
     </div>
   );
 }

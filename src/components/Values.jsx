@@ -38,25 +38,25 @@ const Values = () => {
           <div></div>
           <Card
             icon={FaLightbulb}
-            iconColor="text-yellow-200"
+            iconColor="text-yellow-800"
             title="Be Curious"
             description="Learning never stops. Open your eyes and look around, the more curious you are, the more possibilities you will open throughout your lifetime."
           />
           <Card
             icon={FaHandsHelping}
-            iconColor="text-blue-300"
+            iconColor="text-blue-800"
             title="Be Empathetic"
             description="We believe in the unique human ability to understand and relate to others. Empathy helps us create more collaborative and respectful workspaces."
           />
           <Card
             icon={FaUserCheck}
-            iconColor="text-yellow-300"
+            iconColor="text-red-800"
             title="Take Ownership"
             description="We have established a culture of personal accountability, where our employees possess the freedom and the courage to take initiatives."
           />
           <Card
             icon={FaRegCheckCircle}
-            iconColor="text-purple-300"
+            iconColor="text-purple-800"
             title="Keep Promises"
             description="We believe that trust is the most important key in all our relationships and we take pride in delivering with Quality, precision and integrity."
           />
