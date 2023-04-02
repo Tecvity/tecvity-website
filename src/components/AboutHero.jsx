@@ -15,7 +15,7 @@ function AboutHero() {
 
   return (
     <section id="about" ref={ref}>
-      <div className="bg-yellow mx-24 lg:mx-48">
+      <div className="bg-yellow mx-18 lg:mx-48">
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
@@ -29,7 +29,7 @@ function AboutHero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first text-xl mx-12 lg:mx-24 my-14 text-white text-center">
+          className="font-first text-xl mx-12 my-14 text-white text-center">
           <p>
             Tecvity is a leading software development company located in
             Gujranwala, Pakistan. We are committed to develop innovative
@@ -51,7 +51,7 @@ function AboutHero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-1/5 lg:w-1/6 absolute bottom-24 right-10 lg:bottom-48">
+          className="w-1/5 lg:w-1/6 absolute bottom-24 right-3 lg:bottom-48">
           <Lottie animationData={about2} loop={true} />
         </motion.div>
         <motion.div variants={fadeIn("right", 0.5)}

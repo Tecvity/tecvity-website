@@ -6,6 +6,7 @@ import Team from "../assets/team.json";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import AboutHero from "../components/AboutHero";
+import WhatWeDo from "../components/WhatWeDo";
 
 function About() {
   return (
@@ -27,6 +28,7 @@ function About() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className="w-1/2 lg:w-1/3 flex mx-auto justify-center ">
+          
           <Lottie animationData={Team} loop={true} />
         </motion.div>
         {/* Right Side Div */}
@@ -48,6 +50,7 @@ function About() {
       <Vision />
       <span></span>
       <Values />
+      <WhatWeDo />
     </div>
   );
 }
