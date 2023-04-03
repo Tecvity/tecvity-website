@@ -13,12 +13,13 @@ import WebServices from "./pages/ServicesPages/WebServices";
 import GraphicServices from "./pages/ServicesPages/GraphicServices";
 import UıServices from "./pages/ServicesPages/UıServices";
 import BlogPost from "./pages/BlogPost";
-// import Values from "./pages/Values";
+import ScrollToTop from "./Hooks/Scrool";
 
 export default function App() {
   return (
     <div className=" bg-black bg-cover">
       <Header />
+        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

@@ -43,13 +43,13 @@ const Blog = () => {
 
       <div className="flex mt-4">
         {currentPage > 1 && (
-          <button onClick={() => goToPage(currentPage - 1)} className="mr-4">
+          <button className="border-2 border-main bg-green-900 hover:text-green-500 mr-4 rounded-xl p-2 text-white" onClick={() => goToPage(currentPage - 1)} >
             Previous
           </button>
         )}
 
         {endIndex < blog.length && (
-          <button onClick={() => goToPage(currentPage + 1)}>Next</button>
+          <button className="border-2 border-main bg-green-900 hover:text-green-500 rounded-xl p-2 text-white" onClick={() => goToPage(currentPage + 1)}>Next</button>
         )}
       </div>
     </div>

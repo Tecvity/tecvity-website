@@ -6,6 +6,7 @@ import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
 // import components
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
+import { Link } from "react-scroll";
 
 const Header = () => {
   // mobile nav state
@@ -34,11 +35,13 @@ const Header = () => {
         <div className="hidden text-lg font-first text-gray-200 w-2/5 lg:flex">
           <Nav />
         </div>
-        <button
-          type="button"
-          className="text-black font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-900 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-3 hidden lg:flex text-center mr-4 mb-4">
-          Contact Now
-        </button>
+        <Link to="contact">
+          <button
+            type="button"
+            className="text-black font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-900 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-3 hidden lg:flex text-center mr-4 mb-4">
+            Contact Now
+          </button>
+        </Link>
         {/* cta button - initially hidden - show on desktop mode */}
 
         {/* mobile nav trigger btn - hidden on desktop */}

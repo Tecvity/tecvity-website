@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import WhatWe from "../assets/WhatWeDo.json";
 
@@ -80,11 +80,11 @@ function WhatWeDo() {
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <Link
-                        to="contact"
+                        to="/services"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
                         <BsArrowUpRight />
                       </Link>
-                      <Link to="contact" className="text-gradient hover:text-xl text-xs border-2 p-2 ml-3 lg:border-0 rounded-full border-main">
+                      <Link to="/services" className="text-gradient hover:text-xl text-xs border-2 p-2 ml-3 lg:border-0 rounded-full border-main">
                         {link}
                       </Link>
                     </div>

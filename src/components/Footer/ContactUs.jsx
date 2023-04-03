@@ -40,7 +40,7 @@ export const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <section className="text-white bg-black mb-16 font-first flex">
         <div className="px-5 py-24 mx-auto">
           <motion.div variants={fadeIn('left', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="flex flex-col text-center w-full mb-12">

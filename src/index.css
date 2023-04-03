@@ -53,3 +53,6 @@ a {
   height: 105vh;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}

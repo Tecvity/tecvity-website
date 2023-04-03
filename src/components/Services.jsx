@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 
 function Services() {
   return (
-    <div className="mb-32 bg-black pb-24">
+    <div className="bg-black">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
@@ -71,19 +71,6 @@ function Services() {
           </motion.div>
         </div>
       </div>
-
-      <motion.div
-        variants={fadeIn("up", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="flex justify-center">
-        <button
-          type="button"
-          className="text-black font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
-          More Services
-        </button>
-      </motion.div>
     </div>
   );
 }

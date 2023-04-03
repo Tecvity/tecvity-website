@@ -11,8 +11,11 @@ function Portfolio() {
       <div className='pt-60'>
 
       <FeaturedWork />
-      </div>
+        </div>
+        <div className='pl-12'>
+
       <CustomServices />
+        </div>
       </div>
 
     </div>
