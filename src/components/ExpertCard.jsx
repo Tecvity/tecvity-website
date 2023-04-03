@@ -9,7 +9,7 @@ const ExpertCard = ({
   iconColor,
 }) => {
   return (
-    <div className="bg-main text-center rounded-lg mx-8 lg:mx-12 my-2 lg:my-8 overflow-hidden shadow-lg">
+    <div className="bg-main text-center rounded-lg mx-8 lg:mx- my-2 lg:my-8 overflow-hidden shadow-lg">
       <div className="px-6 py-4">
         <div className="flex items-center mb-2">
           {icon && <div className="flex items-center mx-auto justify-center w-1/2 lg:w-1/3">{icon}</div>}

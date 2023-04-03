@@ -1,7 +1,7 @@
 import LogoImg from './assets/logo-green.png'
 
 export const nav = [
-    { name: 'Services', href: '/' },
+    { name: 'Services', href: '/services' },
     { name: 'About us', href: '/about' },
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'Blog', href: '/blog' },

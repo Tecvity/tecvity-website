@@ -45,28 +45,28 @@ function handleMouseEnter() {
                   }`}>
                   <li>
                     <a
-                      href="/"
+                      href="/mobiledevelopment"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                       Mobile Development
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/services/webdevelopment"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                       Web Development
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/services/graphicdesign"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                       Graphic Design
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="/services/userinterface"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                       UI/UX Design
                     </a>

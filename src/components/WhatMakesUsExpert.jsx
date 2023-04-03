@@ -63,7 +63,7 @@ function WhatMakesUsExpert() {
             description="Pursuing solutions where others fail, we’ve served in the most diverse set of vertical spectrums. Our development heritage of over a decade has given us the expertise to solve any product development challenge in any industry."
           />
         </div>
-        <div>
+        <div cla>
           <ExpertCard
             icon={<Lottie animationData={export3} loop={true} />}
             title="Multiple Awards Winner"

@@ -16,7 +16,7 @@ function Offices() {
       </motion.div>
       <motion.div
         variants={fadeIn("left", 0.5)}
-        initial="hidden"
+        initial="hidden"g
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
         className="text-center text-white mt-4 underline m-8 py-4 text-lg lg:text-2xl">
