@@ -33,7 +33,7 @@ const FeaturedWork = () => {
       <motion.div  variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }} className=" w-full mt-12 lg:w-4/5 h-3/5 flex border-4 border-white items-center justify-center mx-auto mb-24">
+          viewport={{ once: false, amount: 0.3 }} className=" w-full mt-12 lg:w-4/5 h-3/5 flex border-4 border-white items-center justify-center mx-auto mb-12">
         <Swiper
           pauseOnMouseEnter={true}
           centeredSlides={true}
@@ -58,6 +58,7 @@ const FeaturedWork = () => {
           })}
         </Swiper>
       </motion.div>
+       
     </div>
   );
 };

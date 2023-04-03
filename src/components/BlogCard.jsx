@@ -21,7 +21,7 @@ const Card = ({ title, description, image }) => {
           >
             {title}
           </a>
-          <p className="mt-2 text-gray-500">{description}</p>
+          <p className="mt-2 line-clamp-3 text-gray-500">{description}</p>
         </div>
       </div>
     </div>

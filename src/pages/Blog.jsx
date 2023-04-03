@@ -6,7 +6,7 @@ import { fadeIn } from "../variants";
 
 const App = () => {
   return (
-    <div className="p-24">
+    <div className=" mx-4 py-24">
       <motion.h1
         variants={fadeIn("right", 0.5)}
         initial="hidden"
@@ -23,6 +23,14 @@ const App = () => {
         viewport={{ once: false, amount: 0.3 }}>
         <Card
           title="Why Tecvity best?"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+            dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
+            dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
+            velit."
+          image={Img}
+        />
+        <Card
+          title="Whdkfdsf best?"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
             dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
             dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Lottie from "lottie-react";
 import about1 from "../assets/about1.json";
-import about2 from "../assets/hero3.json";
 import about3 from "../assets/hero-left.json";
 
 function AboutHero() {
@@ -46,22 +45,14 @@ function AboutHero() {
           className="w-1/6 lg:w-2/12 absolute top-32 left-10 lg:top-48">
           <Lottie animationData={about1} loop={true} />
         </motion.div>
-        <motion.div
-          variants={fadeIn("left", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-          className="w-1/5 lg:w-1/6 absolute bottom-24 right-3 lg:bottom-48">
-          <Lottie animationData={about2} loop={true} />
-        </motion.div>
         <motion.div variants={fadeIn("right", 0.5)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }} className="w-1/4 lg:w-1/5 absolute bottom-14 left-10 lg:left-24 lg:bottom-8">
+          viewport={{ once: false, amount: 0.3 }} className="w-1/4 lg:w-1/5 hidden lg:block absolute bottom-14 right-10 lg:right-24 lg:bottom-8">
           <Lottie animationData={about3} loop={true} />
         </motion.div>
         <motion.div
-          variants={fadeIn("down", 0.5)}
+          variants={fadeIn("left", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}

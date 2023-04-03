@@ -54,6 +54,13 @@ const MobileNav = () => {
                       Mobile Development
                     </a>
                   </li>
+                   <li>
+                    <a
+                      href="/services"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      See More...
+                    </a>
+                  </li>
                 </ul>
               </li>
             );

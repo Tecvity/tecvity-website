@@ -45,10 +45,10 @@ function WhatWeDo() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
-            <h2 className="lg:text-7xl text-4xl text-accent mb-6">
+            <h2 className="lg:text-7xl text-5xl text-center lg:text-left text-main mb-6">
               What We Do
             </h2>
-            <h3 className="max-w[455px] mb-16">
+            <h3 className="max-w[455px] text-center lg:text-left mb-16">
               Solve Your Toughest Challenges
             </h3>
             <div className="left-0 top-0 hidden lg:block">
@@ -68,7 +68,7 @@ function WhatWeDo() {
                 const { name, description, link } = service;
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                    className="border-b border-white/20 h-[200px] lg:h-[146px] mb-[38px] flex"
                     key={index}>
                     <div className="max-w-[476px]">
                       <h4 className="text-[20px] text-main tracking-wider font-primary font-semibold mb-6">
@@ -84,7 +84,7 @@ function WhatWeDo() {
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
                         <BsArrowUpRight />
                       </Link>
-                      <Link to="contact" className="text-gradient text-sm">
+                      <Link to="contact" className="text-gradient hover:text-xl text-xs border-2 p-2 ml-3 lg:border-0 rounded-full border-main">
                         {link}
                       </Link>
                     </div>

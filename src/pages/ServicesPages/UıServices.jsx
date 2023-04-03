@@ -60,9 +60,6 @@ function UıServices() {
         Let's Talk
       </button>
       {/* Aciton */}
-      <CustomServices />
-      <Innovaton />
-      <FeaturedWork />
     </div>
   );
 }

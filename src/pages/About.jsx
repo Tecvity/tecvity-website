@@ -29,8 +29,8 @@ function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first flex flex-col text-center lg:text-left text-main lg:w-3/5 lg:py-6">
-          <div className="flex items-center justify-center lg:justify-start">
+          className="font-first flex flex-row lg:flex-col text-center lg:text-left text-main lg:w-3/5 lg:py-6">
+          <div className="flex items-center flex-col lg:flex-row justify-center lg:justify-start">
             <p className="text-lg mr-0 lg:mr-24 mt-0 text-white">
               At Tecvity, we are committed to providing the highest quality
               software solutions to our clients. Our team of engineers and
@@ -41,12 +41,14 @@ function About() {
             <Lottie
               animationData={Team}
               loop={true}
-              style={{ maxWidth: "50%", marginLeft: "20px" }}
+              style={{ maxWidth: "70%", marginLeft: "20px" }}
             />
           </div>
         </motion.div>
       </div>
       <Vision />
+      
+      
       <Values />
       <WhatWeDo />
       <WhatMakesUsExpert />
