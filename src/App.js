@@ -4,7 +4,6 @@ import Header from "./components/Navbar/Header";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import ContactUs from "./components/Footer/ContactUs";
-// import Vision from "./pages/Vision";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import MainServices from "./pages/ServicesPages/MainServices";
@@ -14,18 +13,20 @@ import GraphicServices from "./pages/ServicesPages/GraphicServices";
 import UıServices from "./pages/ServicesPages/UıServices";
 import BlogPost from "./pages/BlogPost";
 import ScrollToTop from "./Hooks/Scrool";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
     <div className=" bg-black bg-cover">
       <Header />
-        <ScrollToTop />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
       <Routes>
         <Route path="/about" element={<About />} />
       </Routes>
+
       <Routes>
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
@@ -53,6 +54,9 @@ export default function App() {
       </Routes>
       <Routes>
         <Route path="/services/userinterface" element={<UıServices />} />
+      </Routes>
+      <Routes>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ContactUs />
       <Footer />

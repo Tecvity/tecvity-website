@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import Lottie from "lottie-react";
 import Graphic from "../../assets/Services/graphic.json";
-import Innovaton from "../../components/Innovaton";
-import FeaturedWork from "../../components/FeaturedWork"
-
-
-import CustomServices from "../../components/CustomServices";
 
 function GraphicServices() {
   return (
@@ -61,9 +56,6 @@ function GraphicServices() {
         Let's Talk
       </button>
       {/* Aciton */}
-      
-      
-
     </div>
   );
 }

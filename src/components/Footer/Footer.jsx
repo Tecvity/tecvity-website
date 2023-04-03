@@ -9,6 +9,7 @@ import {
   FaYoutube,
   FaMastodon,
 } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,12 +21,22 @@ const Footer = () => {
               Services
             </h3>
             <ul>
-              <li className="hover:text-green-600 ">Web App Development</li>
-              <li className="hover:text-green-600 ">Mobile App Development</li>
-              <li className="hover:text-green-600 ">
-                Custom Software Development
-              </li>
-              <li className="hover:text-green-600 ">UI/UX Design</li>
+              <Link to="/services/webdevelopment">
+                <li className="hover:text-green-600 ">Web App Development</li>
+              </Link>
+              <Link to="/services/mobiledevelopment">
+                <li className="hover:text-green-600 ">
+                  Mobile App Development
+                </li>
+              </Link>
+              <Link to="/services/userinterface">
+                <li className="hover:text-green-600 ">
+                  User Interface
+                </li>
+              </Link>
+              <Link to="/services/graphicdesign">
+                <li className="hover:text-green-600 ">UI/UX Design</li>
+              </Link>
             </ul>
           </div>
           <div>
