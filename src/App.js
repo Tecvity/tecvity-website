@@ -7,11 +7,11 @@ import ContactUs from "./components/Footer/ContactUs";
 // import Vision from "./pages/Vision";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
-import MainServices from "./pages/MainServices";
-import MobileServices from "./pages/MobileServices";
-import WebServices from "./pages/WebServices";
-import GraphicServices from "./pages/GraphicServices";
-import UıServices from "./pages/UıServices";
+import MainServices from "./pages/ServicesPages/MainServices";
+import MobileServices from "./pages/ServicesPages/MobileServices";
+import WebServices from "./pages/ServicesPages/WebServices";
+import GraphicServices from "./pages/ServicesPages/GraphicServices";
+import UıServices from "./pages/ServicesPages/UıServices";
 // import Values from "./pages/Values";
 
 export default function App() {

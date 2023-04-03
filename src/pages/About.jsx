@@ -15,7 +15,7 @@ function About() {
     <div >
       < AboutHero />
       <motion.h1
-        variants={fadeIn("up", 0.5)}
+        variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
