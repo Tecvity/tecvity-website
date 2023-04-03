@@ -4,21 +4,25 @@ import { FaCaretDown } from "react-icons/fa";
 
 const Nav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-const dropdownTimeoutRef = useRef(null);
+  const dropdownTimeoutRef = useRef(null);
 
-function handleMouseLeave() {
-  dropdownTimeoutRef.current = setTimeout(() => {
-    setIsDropdownOpen(false);
-  }, 1500); // 500ms sonra dropdown kapanacak
-}
-
-function handleMouseEnter() {
-  if (dropdownTimeoutRef.current !== null) {
-    clearTimeout(dropdownTimeoutRef.current);
-    dropdownTimeoutRef.current = null;
+  function handleMouseLeave() {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setIsDropdownOpen(false);
+    }, 1500);
   }
-  setIsDropdownOpen(true);
-}
+
+  function handleMouseEnter() {
+    if (dropdownTimeoutRef.current !== null) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setIsDropdownOpen(true);
+  }
+
+  function handleServiceClick() {
+    window.location.href = "/services";
+  }
 
   return (
     <nav>
@@ -33,7 +37,7 @@ function handleMouseEnter() {
                   <button
                     className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
                     onMouseEnter={handleMouseEnter}
-                    onClick={() => setIsDropdownOpen(true)}
+                    onClick={handleServiceClick}
                     onMouseLeave={handleMouseLeave}>
                     {name}
                     <FaCaretDown className="inline-block ml-1" />

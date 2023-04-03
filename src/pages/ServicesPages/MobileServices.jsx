@@ -5,6 +5,8 @@ import Lottie from "lottie-react";
 import Mobile from "../../assets/Services/MobileServices.json";
 import CustomServices from "../../components/CustomServices";
 import Innovaton from "../../components/Innovaton";
+import FeaturedWork from "../../components/FeaturedWork"
+
 
 function MobileServices() {
   return (
@@ -63,6 +65,7 @@ function MobileServices() {
       
       <CustomServices />
       <Innovaton />
+      <FeaturedWork />
      </div>
   );
 }

@@ -12,41 +12,38 @@ import Offices from "../components/Offices";
 
 function About() {
   return (
-    <div >
-      < AboutHero />
+    <div>
+      <AboutHero />
       <motion.h1
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-7xl lg:text-8xl -mb-8 text-center text-main mt-48">
+        className="text-6xl lg:text-7xl -mb-20 text-center text-main mt-48">
         About Us
       </motion.h1>
       <div className="flex-col bg-black flex mb-24 lg:flex-row lg:justify-center lg:mx-8 my-32">
-        {/* Left Side div */}
-        <motion.div
-          variants={fadeIn("right", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-          className="w-1/2 lg:w-1/3 flex mx-auto justify-center ">
-          
-          <Lottie animationData={Team} loop={true} />
-        </motion.div>
         {/* Right Side Div */}
         <motion.div
           variants={fadeIn("left", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first flex flex-col text-center lg:text-left text-main lg:w-1/2  lg:py-6">
-          <p className="text-lg mr-0 lg:mr-24 mt-0 lg:mt-28 text-white">
-            At Tecvity, we are committed to providing the highest quality
-            software solutions to our clients. Our team of engineers and
-            designers are highly skilled and professional, ensuring that our
-            services are of the highest standard. We take pride in delivering
-            solutions that exceed our clients' expectations.
-          </p>
+          className="font-first flex flex-col text-center lg:text-left text-main lg:w-3/5 lg:py-6">
+          <div className="flex items-center justify-center lg:justify-start">
+            <p className="text-lg mr-0 lg:mr-24 mt-0 text-white">
+              At Tecvity, we are committed to providing the highest quality
+              software solutions to our clients. Our team of engineers and
+              designers are highly skilled and professional, ensuring that our
+              services are of the highest standard. We take pride in delivering
+              solutions that exceed our clients' expectations.
+            </p>
+            <Lottie
+              animationData={Team}
+              loop={true}
+              style={{ maxWidth: "50%", marginLeft: "20px" }}
+            />
+          </div>
         </motion.div>
       </div>
       <Vision />

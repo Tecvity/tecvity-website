@@ -28,7 +28,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <a href="/" className=" w-2/5 lg:w-1/6">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Tecvity Logo" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
         <div className="hidden text-lg font-first text-gray-200 w-2/5 lg:flex">

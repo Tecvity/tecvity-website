@@ -5,8 +5,7 @@ import Lottie from "lottie-react";
 import Web from "../../assets/Services/WebServices.json";
 import CustomServices from "../../components/CustomServices";
 import Innovaton from "../../components/Innovaton";
-
-
+import FeaturedWork from "../../components/FeaturedWork";
 
 function WebServices() {
   return (
@@ -62,6 +61,7 @@ function WebServices() {
       {/* Aciton */}
       <CustomServices />
       <Innovaton />
+      <FeaturedWork />
     </div>
   );
 }

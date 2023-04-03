@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import CustomServices from "../../components/CustomServices";
 import Ui from "../../assets/Services/Ui.json";
 import Innovaton from "../../components/Innovaton";
+import FeaturedWork from "../../components/FeaturedWork"
 
 function UıServices() {
   return (
@@ -61,6 +62,7 @@ function UıServices() {
       {/* Aciton */}
       <CustomServices />
       <Innovaton />
+      <FeaturedWork />
     </div>
   );
 }
