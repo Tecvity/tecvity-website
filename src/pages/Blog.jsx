@@ -1,73 +1,59 @@
-import React from "react";
-import Card from "../components/BlogCard";
-import Img from "../assets/images/portfolio/dinghysailing.jpg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { blog } from "../data";
 
-const App = () => {
+const Blog = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(4);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Update the current page based on the URL
+    const queryParams = new URLSearchParams(location.search);
+    const page = parseInt(queryParams.get("page")) || 1;
+    setCurrentPage(page);
+  }, [location.search]);
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const paginatedBlog = blog.slice(startIndex, endIndex);
+
+  const goToPage = (pageNumber) => {
+    navigate(`/blog?page=${pageNumber}`);
+  };
+
   return (
-    <div className=" mx-4 py-24">
-      <motion.h1
-        variants={fadeIn("right", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="text-7xl mb-24 lg:mb-12 lg:mt-24  mt-12 lg:text-8xl 
-         text-center text-main ">
-        Blog
-      </motion.h1>
-      <motion.div
-        variants={fadeIn("left", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}>
-        <Card
-          title="Why Tecvity best?"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-            dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
-            dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
-            velit."
-          image={Img}
-        />
-        <Card
-          title="Whdkfdsf best?"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-            dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
-            dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
-            velit."
-          image={Img}
-        />
-      </motion.div>
-      <motion.div
-        variants={fadeIn("right", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}>
-        <Card
-          title="Why Tecvity best?"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-            dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
-            dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
-            velit."
-          image={Img}
-        />
-      </motion.div>
-      <motion.div
-        variants={fadeIn("up", 0.5)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}>
-        <Card
-          title="Why Tecvity best?"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-            dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum
-            dolor feugiat at. Nullam id quam auctor, suscipit quam at, vehicula
-            velit."
-          image={Img}
-        />
-      </motion.div>
+    <div className="flex font-first text-center flex-col mt-10 lg:mt-40 items-center">
+      {paginatedBlog.map((item) => (
+        <div
+          key={item.id}
+          className="w-full md:w-2/3 lg:w-1/2 bg-main shadow-md p-4 rounded-md my-4">
+          <Link
+            to={`/blog/${item.id}`}
+            className="text-black font-first text text-4xl lg:text-6xl mb-2">
+            {item.title}
+          </Link>
+          <p className="text-gray-900 leading-6 line-clamp-4 mt-2 ">
+            {item.description}
+          </p>
+          <img src={item.img} alt={item.title} className="w-full my-2" />
+        </div>
+      ))}
+
+      <div className="flex mt-4">
+        {currentPage > 1 && (
+          <button onClick={() => goToPage(currentPage - 1)} className="mr-4">
+            Previous
+          </button>
+        )}
+
+        {endIndex < blog.length && (
+          <button onClick={() => goToPage(currentPage + 1)}>Next</button>
+        )}
+      </div>
     </div>
   );
 };
 
-export default App;
+export default Blog;

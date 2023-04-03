@@ -12,6 +12,7 @@ import MobileServices from "./pages/ServicesPages/MobileServices";
 import WebServices from "./pages/ServicesPages/WebServices";
 import GraphicServices from "./pages/ServicesPages/GraphicServices";
 import UıServices from "./pages/ServicesPages/UıServices";
+import BlogPost from "./pages/BlogPost";
 // import Values from "./pages/Values";
 
 export default function App() {
@@ -27,9 +28,13 @@ export default function App() {
       <Routes>
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+
       <Routes>
         <Route path="/blog" element={<Blog />} />
+
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
+
       <Routes>
         <Route path="/services" element={<MainServices />} />
       </Routes>
