@@ -55,11 +55,11 @@ export default function App() {
       <Routes>
         <Route path="/services/userinterface" element={<UıServices />} />
       </Routes>
+      <ContactUs />
+      <Footer />
       <Routes>
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <ContactUs />
-      <Footer />
     </div>
   );
 }

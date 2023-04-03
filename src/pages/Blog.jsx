@@ -4,7 +4,7 @@ import { blog } from "../data";
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(4);
+  const [itemsPerPage, ] = useState(4);
   const location = useLocation();
   const navigate = useNavigate();
 

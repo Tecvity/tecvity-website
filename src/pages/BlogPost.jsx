@@ -10,7 +10,7 @@ const BlogPost = () => {
     return <div>Blog post not found</div>;
   }
   return (
-    <div className="max-w-3xl text-center my-40 font-first mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-3xl text-center mb-40 mt-20 font-first mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <a href="/blog" className="flex items-center mb-8">
         <BiArrowBack className="mr-2" />
         Go back
