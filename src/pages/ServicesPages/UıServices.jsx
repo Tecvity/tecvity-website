@@ -6,6 +6,9 @@ import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/UiVideo.mp4";
 import { Link } from "react-scroll";
 import Ui from "../../assets/Services/UİUx.json";
+import ServiceCard from "../../components/ServiceCard";
+import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
+import { MdSecurity, MdSettings } from "react-icons/md";
 
 function Hero() {
   return (
@@ -74,6 +77,64 @@ function Hero() {
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Ui} loop={true} />
         </motion.div>
+      </div>
+      <div className="pt-60">
+          <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          Our Services
+        </h1>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="User Research"
+            description="We conduct research on target users to understand their needs, behaviors, and preferences."
+          />
+          <ServiceCard
+            icon={FaChartLine}
+            iconColor="text-blue-600"
+            title="Interface Design"
+            description="We design the visual elements of a product and create wireframes and mockups."
+          />
+          <ServiceCard
+            icon={MdSettings}
+            iconColor="text-blue-600"
+            title="Prototyping"
+            description="We create a working model of the product, which can be used for testing and demonstration purposes."
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaShieldAlt}
+            iconColor="text-blue-600"
+            title="Design System"
+            description="We create a set of design guidelines and components that can be reused across multiple projects, to ensure consistency and efficiency."
+          />
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="Design Strategy"
+            description="We work with clients to understand business goals and user needs, and create a design plan that aligns with those goals."
+          />
+          <ServiceCard
+            icon={MdSecurity}
+            iconColor="text-blue-600"
+            title="Design Consulting"
+            description="We provide expert advice on design-related issues to help clients make informed decisions about their product"
+          />
+        </div>
+      </div>
+      <div>
+        <Link to="contact">
+          <motion.button
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            type="button"
+            className="text-black mt-12 mb-80 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+            Get in Touch
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

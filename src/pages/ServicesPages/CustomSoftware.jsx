@@ -75,7 +75,7 @@ function CustomSoftware() {
           <Lottie animationData={Custom} loop={true} />
         </motion.div>
       </div>
-      <div className="py-60 mx-24">
+      <div className="py-60 lg:mx-24">
         <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-6xl">
           Custom Software Solutions For Business Of Any Size
         </h1>

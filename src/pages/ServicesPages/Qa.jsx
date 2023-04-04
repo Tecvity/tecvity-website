@@ -5,7 +5,15 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/QaVideo.mp4";
 import { Link } from "react-scroll";
-import Test from "../../assets/Services/test.json"
+import Test from "../../assets/Services/test.json";
+import ServiceCard from "../../components/ServiceCard";
+import {
+  FaBug,
+  FaChartLine,
+  FaCheckCircle,
+  FaShieldAlt,
+  FaUser,
+} from "react-icons/fa";
 
 function MobileServices() {
   return (
@@ -39,8 +47,6 @@ function MobileServices() {
         </div>
       </section>
       <div className=" bg-black mt-14 flex-col lg:flex-row flex pt-24 mb-24 lg:justify-center lg:mx-8 my-32">
-       
-
         <motion.div
           variants={fadeIn("left", 0.5)}
           initial="hidden"
@@ -76,6 +82,92 @@ function MobileServices() {
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Test} loop={true} />
         </motion.div>
+      </div>
+      <div className="pt-60">
+        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          Our Services
+        </h1>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaBug}
+            iconColor="text-red-600"
+            title="Functional Testing"
+            description="Test the software's functionality, usability, and compatibility."
+          />
+          <ServiceCard
+            icon={FaChartLine}
+            iconColor="text-blue-600"
+            title="Performance Testing"
+            description="Evaluate the software's performance under different loads and environments."
+          />
+          <ServiceCard
+            icon={FaCheckCircle}
+            iconColor="text-purple-600"
+            title="Prototyping"
+            description="Create a working model of the product for testing and demonstration purposes."
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaCheckCircle}
+            iconColor="text-green-600"
+            title="Unit Testing"
+            description="Test individual units and components such as functions and methods."
+          />
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="Integration Testing"
+            description="Verify that software components are integrated as specified."
+          />
+          <ServiceCard
+            icon={FaShieldAlt}
+            iconColor="text-yellow-600"
+            title="System Testing"
+            description="Verify that the entire software system meets specified requirements."
+          />
+        </div>
+        <div className="flex mx-auto justify-center flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaShieldAlt}
+            iconColor="text-indigo-600"
+            title="Acceptance Testing"
+            description="Verify your customer's acceptance criteria."
+          />
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="Regression Testing"
+            description="Ensure that changes and updates do not introduce new bugs."
+          />
+        </div>
+        <div className="flex mx-auto justify-center flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="User Acceptance Testing (UAT)"
+            description="Evaluate if your software meets end-users' needs."
+          />
+          <ServiceCard
+            icon={FaCheckCircle}
+            iconColor="text-pink-600"
+            title="Security Testing"
+            description="Evaluate the software's security and identify vulnerabilities."
+          />
+        </div>
+      </div>
+      <div>
+        <Link to="contact">
+          <motion.button
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            type="button"
+            className="text-black mt-12 mb-80 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+            Get in Touch
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

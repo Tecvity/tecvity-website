@@ -5,7 +5,15 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/WebVideo.mp4";
 import { Link } from "react-scroll";
-import Web from "../../assets/Services/webb.json"
+import Web from "../../assets/Services/webb.json";
+import {
+  FaLaptopCode,
+  FaShoppingCart,
+  FaTools,
+} from "react-icons/fa";
+import { RiComputerLine } from "react-icons/ri";
+import { IoIosPhonePortrait } from "react-icons/io";
+import ServiceCard from "../../components/ServiceCard";
 
 function Hero() {
   return (
@@ -73,6 +81,78 @@ function Hero() {
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Web} loop={true} />
         </motion.div>
+      </div>
+      <div className="pt-60">
+        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          Our Services
+        </h1>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaLaptopCode}
+            iconColor="text-blue-600"
+            title="Experience Design"
+            description="Our extensive expertise in UI/UX design and front-end development allows us to create delightful user experiences."
+          />
+          <ServiceCard
+            icon={FaLaptopCode}
+            iconColor="text-blue-600"
+            title="Frontend Development"
+            description="We offer full-stack front-end expertise to create innovative, human-centric and goal-oriented web & mobile solutions."
+          />
+          <ServiceCard
+            icon={FaLaptopCode}
+            iconColor="text-blue-600"
+            title="Backend Development"
+            description="We build back-end solutions that are extensible, scalable, and easy to maintain."
+          />
+        </div>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaTools}
+            iconColor="text-blue-600"
+            title="Security Monitoring"
+            description="Constantly monitoring a company's network and systems for signs of cyber attacks or intrusions."
+          />
+          <ServiceCard
+            icon={FaLaptopCode}
+            iconColor="text-blue-600"
+            title="Full Stack Development"
+            description="We provide full-spectrum software engineering for the simple to high-performing backend."
+          />
+          <ServiceCard
+            icon={FaShoppingCart}
+            iconColor="text-blue-600"
+            title="E-Commerce Web Development"
+            description="Tkxel can build web apps for e-commerce businesses, including online stores, shopping carts, and payment gateway integration."
+          />
+        </div>
+        <div className="flex mx-auto justify-center flex-col lg:flex-row">
+          <ServiceCard
+            icon={RiComputerLine}
+            iconColor="text-blue-600"
+            title="Web App Maintenance And Updates"
+            description="After the launch of the app, we provide services to maintain and update the app to fix bugs, improve performance, and add new features."
+          />
+          <ServiceCard
+            icon={IoIosPhonePortrait}
+            iconColor="text-blue-600"
+            title="Web App Testing"
+            description="We test web apps for bugs and other issues before it is launched in the market to ensure that it runs smoothly and is free of any issues."
+          />
+        </div>
+      </div>
+      <div>
+        <Link to="contact">
+          <motion.button
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            type="button"
+            className="text-black mt-12 pb-42 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+            Get in Touch
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

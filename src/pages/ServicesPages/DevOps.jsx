@@ -6,6 +6,8 @@ import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/DevOpsVideo.mp4";
 import { Link } from "react-scroll";
 import DevOpsLottie from "../../assets/Services/devops.json";
+import { FaTools, FaRobot, FaTasks } from "react-icons/fa";
+import ServiceCard from "../../components/ServiceCard";
 
 function DevOps() {
   return (
@@ -75,6 +77,47 @@ function DevOps() {
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={DevOpsLottie} loop={true} />
         </motion.div>
+      </div>
+      <div className="pt-60">
+        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          Custom DevOps Solutions
+        </h1>
+        <p className="text-lg mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
+          Accelerating software delivery with DevOps expertise{" "}
+        </p>
+        <div className="flex flex-col lg:flex-row">
+          <ServiceCard
+            icon={FaTools}
+            iconColor="text-red-600"
+            title="DevOps Assessment"
+            description="Our DevOps engineers analyze the key points of your deployment processes and recommend tools and processes that help you increase efficiency."
+          />
+          <ServiceCard
+            icon={FaRobot}
+            iconColor="text-blue-600"
+            title="DevOps Automation"
+            description="We automate the end to end delivery cycle, decreasing deployment and rollback times, minimizing risk and boosting productivity."
+          />
+          <ServiceCard
+            icon={FaTasks}
+            iconColor="text-purple-600"
+            title="DevOps Management"
+            description="We'll help you to integrate your delivery pipeline automation cycle with the rest of your development process."
+          />
+        </div>
+      </div>
+      <div>
+        <Link to="contact">
+          <motion.button
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            type="button"
+            className="text-black mt-12 mb-80 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+            Get in Touch
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

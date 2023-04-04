@@ -6,6 +6,10 @@ import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/MobileVideo.mp4";
 import { Link } from "react-scroll";
 import Mobile from "../../assets/mobile.json";
+import ServiceCard from "../../components/ServiceCard";
+import { FaMobileAlt, FaMicrochip } from 'react-icons/fa';
+
+
 
 function MobileServices() {
   return (
@@ -72,6 +76,49 @@ function MobileServices() {
           className="w-1/2 lg:w-1/3 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Mobile} loop={true} />
         </motion.div>
+      </div>
+      <div className="py-60 lg:mx-12">
+        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          Our Mobile App Development Services{" "}
+        </h1>
+        <p className="text-md mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
+          Delight your customers with feature-rich, expressive apps that are
+          native to their devices{" "}
+        </p>
+        <div className="flex flex-col lg:flex-row">
+              <ServiceCard
+      icon={FaMobileAlt}
+      iconColor="text-blue-600"
+      title="Native Mobile App Development"
+      description="Our native mobile app developers can build apps that fit all your needs, from security to design."
+    />
+    <ServiceCard
+      icon={FaMobileAlt}
+      iconColor="text-blue-600"
+      title="Hybrid Mobile App Development"
+      description="We help you develop apps that are fully functional on different devices, leveraging a unique blend of technologies."
+    />
+    <ServiceCard
+      icon={FaMicrochip}
+      iconColor="text-blue-600"
+      title="Wearables and Embedded Software"
+      description="We can create companion apps for a number of wearable devices, integrate with smart devices or proprietary peripherals."
+    />
+
+        </div>
+        <div>
+          <Link to="contact">
+            <motion.button
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              type="button"
+              className="text-black mt-12 pb-42 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+              Get in Touch
+            </motion.button>
+          </Link>
+        </div>
       </div>
     </div>
   );
