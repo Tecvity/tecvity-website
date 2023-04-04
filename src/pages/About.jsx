@@ -75,7 +75,7 @@ function About() {
       </div>
 
       <WhatWeDo />
-      <Link to="/services">
+      <a href="/services">
         <motion.button
           variants={fadeIn("right", 0.5)}
           initial="hidden"
@@ -85,7 +85,7 @@ function About() {
           className="text-black -mt-60  mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
           See More Services
         </motion.button>
-      </Link>
+      </a>
       <div className="pb-60"> </div>
       <WhatMakesUsExpert />
       <Offices />

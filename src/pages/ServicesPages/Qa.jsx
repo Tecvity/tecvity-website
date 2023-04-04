@@ -39,9 +39,7 @@ function MobileServices() {
         </div>
       </section>
       <div className=" bg-black mt-14 flex-col lg:flex-row flex pt-24 mb-24 lg:justify-center lg:mx-8 my-32">
-        {/* Left Side div */}
-
-        {/* Right Side Div */}
+       
 
         <motion.div
           variants={fadeIn("left", 0.5)}

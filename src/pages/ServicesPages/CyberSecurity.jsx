@@ -19,7 +19,7 @@ function CyberSecurtiy() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="absolute lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
+            className="absolute top-48 lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
             <p className="text-2xl py-4 text-slate-300 hover:text-main">
               Cyber Security{" "}
             </p>
@@ -40,9 +40,6 @@ function CyberSecurtiy() {
       </section>
 
       <div className=" bg-black flex-col lg:flex-row flex pt-24 mb-24 lg:justify-center lg:mx-8 my-32">
-        {/* Left Side div */}
-
-        {/* Right Side Div */}
         <motion.div
           variants={fadeIn("left", 0.5)}
           initial="hidden"
@@ -65,7 +62,7 @@ function CyberSecurtiy() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-1/3 lg:w-1/3 flex mx-auto flex-col lg:flex-row justify-center ">
+          className="w-1/2 lg:w-1/3 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Cyber} loop={true} />
         </motion.div>
       </div>
