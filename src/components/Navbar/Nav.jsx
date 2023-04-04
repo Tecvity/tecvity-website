@@ -75,6 +75,34 @@ const Nav = () => {
                       UI/UX Design
                     </a>
                   </li>
+                   <li>
+                    <a
+                      href="/services/userinterface"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      QA & Testing
+                    </a>
+                  </li>
+                   <li>
+                    <a
+                      href="/services/customservices"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      Custom Software
+                    </a>
+                  </li>
+                   <li>
+                    <a
+                      href="/services/devops"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      Devops
+                    </a>
+                  </li>
+                   <li>
+                    <a
+                      href="/services/cybersecurity"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      Cyber Security
+                    </a>
+                  </li>
                      <li>
                     <a
                       href="/services"

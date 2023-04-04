@@ -14,52 +14,38 @@ import UıServices from "./pages/ServicesPages/UıServices";
 import BlogPost from "./pages/BlogPost";
 import ScrollToTop from "./Hooks/Scrool";
 import NotFound from "./pages/NotFound";
+import DevOps from "./pages/ServicesPages/DevOps";
+import Qa from "./pages/ServicesPages/Qa";
+import CyberSecurtiy from "./pages/ServicesPages/CyberSecurity";
+import CustomSoftware from "./pages/ServicesPages/CustomSoftware";
 
 export default function App() {
   return (
-    <div className=" bg-black bg-cover">
+    <div className="bg-black bg-cover">
       <Header />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
-      <Routes>
         <Route path="/about" element={<About />} />
-      </Routes>
-
-      <Routes>
         <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-
-      <Routes>
         <Route path="/blog" element={<Blog />} />
-
         <Route path="/blog/:id" element={<BlogPost />} />
-      </Routes>
-
-      <Routes>
         <Route path="/services" element={<MainServices />} />
-      </Routes>
-      <Routes>
         <Route
           path="/services/mobiledevelopment"
           element={<MobileServices />}
         />
-      </Routes>
-      <Routes>
         <Route path="/services/webdevelopment" element={<WebServices />} />
-      </Routes>
-      <Routes>
         <Route path="/services/graphicdesign" element={<GraphicServices />} />
-      </Routes>
-      <Routes>
+        <Route path="/services/devops" element={<DevOps />} />
+        <Route path="/services/customservices" element={<CustomSoftware />} />
+        <Route path="/services/qatesting" element={<Qa />} />
+        <Route path="/services/cyberSecurity" element={<CyberSecurtiy />} />
         <Route path="/services/userinterface" element={<UıServices />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ContactUs />
       <Footer />
-      <Routes>
-        <Route path="*" element={<NotFound />} />
-      </Routes>
     </div>
   );
 }

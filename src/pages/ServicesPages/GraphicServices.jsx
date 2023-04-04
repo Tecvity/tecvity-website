@@ -1,62 +1,42 @@
 import React from "react";
+import Lottie from "lottie-react";
+import button from "../../assets/mainbutton.json";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import Lottie from "lottie-react";
-import Graphic from "../../assets/Services/graphic.json";
+import BgVideo from "../../assets/videos/DesingVideo.mp4";
+import { Link } from "react-scroll";
 
 function GraphicServices() {
   return (
-    <div className="mt-12 lg:mt-64 ml-3 lg:ml-24  mb-80">
-      <motion.div
-        variants={fadeIn("up", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="w-1/3 lg:w-2/5 mt-8 absolute right-3 top-28 lg:right-20 flex">
-        <Lottie animationData={Graphic} loop={true} />
-      </motion.div>
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="font-first underline text-slate-400 text-left text-md lg:text-xl">
-        <h4>Graphic Designs</h4>
-      </motion.div>
-      <motion.div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="font-first text-main text-left text-4xl lg:text-8xl">
-        <h1>
-          Your Vision <br />
-          Our Expertise
-        </h1>
-      </motion.div>
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="font-first leading-5 lg:leading-7 mt-2 text-white  w-4/5 lg:w-1/2 text-left text-sm lg:text-md">
-        <p>
-          At Tecvity, we create customized web development solutions that meet
-          the unique needs of your business. Our experienced team of full-stack
-          developers uses the latest tools and technologies to build fast,
-          responsive, and visually stunning websites. We offer a range of
-          services, including website design and development, e-commerce
-          solutions, and mobile-responsive design. We work closely with you to
-          understand your goals and requirements and provide ongoing maintenance
-          and support to ensure your website stays secure and performs at its
-          best.
-        </p>
-      </motion.div>
-      <button className="flex mt-4 font-first  text-black bg-main border-0 py-2 px-8 focus:outline-none hover:bg-green-500 rounded text-lg">
-        Let's Talk
-      </button>
-      {/* Aciton */}
-    </div>
+    <section className="page">
+      <div className="overlay"></div>
+      <video src={BgVideo} autoPlay loop muted></video>
+      <div className="page__content text-2xl">
+        <motion.div
+          variants={fadeIn("down", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="absolute top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
+          <p className="text-2xl py-4 text-slate-300 hover:text-main">
+            Mobile App Development
+          </p>
+          <h1 className="bg-gradient-to-r from-main bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-main lg:text-7xl">
+            We Build Appls People Love To Use
+          </h1>
+          <p className="text-2xl py-4 text-white hover:text-main">
+            We deliver more than just apps. We deliver experiences. Our fast,
+            responsive and highly scalable mobile app development will help you
+            get ahead of the curve in no time!
+          </p>
+          <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
+            <Link to="contact">
+              <Lottie animationData={button} loop={true} />
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 }
 

@@ -49,12 +49,33 @@ const MobileNav = () => {
                   </li>
                   <li>
                     <a
-                      href="/services/mobiledevelopment"
+                      href="/services/qatesting"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Mobile Development
+                      QA&Testing
                     </a>
                   </li>
-                   <li>
+                  <li>
+                    <a
+                      href="/services/customservices"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      CustomSoftware
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/services/cyberSecurity"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      CyberSecurity
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/services/devops"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                      DevOps
+                    </a>
+                  </li>
+                  <li>
                     <a
                       href="/services"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
@@ -82,4 +103,3 @@ const MobileNav = () => {
 };
 
 export default MobileNav;
-
