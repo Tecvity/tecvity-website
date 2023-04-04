@@ -12,6 +12,7 @@ import { RiComputerLine } from "react-icons/ri";
 import { MdSecurity } from "react-icons/md";
 import { BiCloud } from "react-icons/bi";
 import { IoIosPhonePortrait } from "react-icons/io";
+import WhyChooseUs from "../../components/WhyChooseUs";
 
 function CyberSecurtiy() {
   return (
@@ -164,6 +165,7 @@ function CyberSecurtiy() {
           </motion.button>
         </Link>
       </div>
+      <WhyChooseUs />
     </div>
   );
 }

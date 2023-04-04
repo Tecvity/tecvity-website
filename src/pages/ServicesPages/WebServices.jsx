@@ -6,14 +6,11 @@ import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/WebVideo.mp4";
 import { Link } from "react-scroll";
 import Web from "../../assets/Services/webb.json";
-import {
-  FaLaptopCode,
-  FaShoppingCart,
-  FaTools,
-} from "react-icons/fa";
+import { FaLaptopCode, FaShoppingCart, FaTools } from "react-icons/fa";
 import { RiComputerLine } from "react-icons/ri";
 import { IoIosPhonePortrait } from "react-icons/io";
 import ServiceCard from "../../components/ServiceCard";
+import WhyChooseUs from "../../components/WhyChooseUs";
 
 function Hero() {
   return (
@@ -154,6 +151,7 @@ function Hero() {
           </motion.button>
         </Link>
       </div>
+      <WhyChooseUs />
     </div>
   );
 }

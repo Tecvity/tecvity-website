@@ -9,6 +9,8 @@ import Ui from "../../assets/Services/UİUx.json";
 import ServiceCard from "../../components/ServiceCard";
 import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
 import { MdSecurity, MdSettings } from "react-icons/md";
+import WhyChooseUs from "../../components/WhyChooseUs";
+
 
 function Hero() {
   return (
@@ -136,6 +138,8 @@ function Hero() {
           </motion.button>
         </Link>
       </div>
+            <WhyChooseUs />
+
     </div>
   );
 }

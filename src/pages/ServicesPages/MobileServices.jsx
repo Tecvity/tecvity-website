@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 import Mobile from "../../assets/mobile.json";
 import ServiceCard from "../../components/ServiceCard";
 import { FaMobileAlt, FaMicrochip } from 'react-icons/fa';
+import WhyChooseUs from "../../components/WhyChooseUs";
 
 
 
@@ -120,6 +121,8 @@ function MobileServices() {
           </Link>
         </div>
       </div>
+            <WhyChooseUs />
+
     </div>
   );
 }
