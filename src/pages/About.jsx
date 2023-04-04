@@ -9,6 +9,7 @@ import AboutHero from "../components/AboutHero";
 import WhatWeDo from "../components/WhatWeDo";
 import WhatMakesUsExpert from "../components/WhatMakesUsExpert";
 import Offices from "../components/Offices";
+import { Link } from "react-scroll";
 
 function About() {
   return (
@@ -19,10 +20,10 @@ function About() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-6xl lg:text-7xl -mb-20 text-center text-main mt-48">
+        className="text-6xl lg:text-7xl -mb-24 lg:-m-mb40 text-center text-main mt-48">
         About Us
       </motion.h1>
-      <div className="flex-col bg-black flex mb-24 lg:flex-row lg:justify-center lg:mx-8 my-32">
+      <div className="flex-col bg-black flex mb-4 lg:flex-row lg:justify-center lg:mx-8 my-32">
         {/* Right Side Div */}
         <motion.div
           variants={fadeIn("left", 0.5)}
@@ -46,11 +47,46 @@ function About() {
           </div>
         </motion.div>
       </div>
+      <Link to="contact">
+        <motion.button
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          type="button"
+          className="text-black mb-52 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+          Learn More
+        </motion.button>
+      </Link>
       <Vision />
-      
-      
-      <Values />
+      <Link to="contact">
+        <motion.button
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          type="button"
+          className="text-black mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+          Get in Touch
+        </motion.button>
+      </Link>
+      <div className="pt-32">
+        <Values />
+      </div>
+
       <WhatWeDo />
+      <Link to="/services">
+        <motion.button
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          type="button"
+          className="text-black -mt-60  mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+          See More Services
+        </motion.button>
+      </Link>
+      <div className="pb-60"> </div>
       <WhatMakesUsExpert />
       <Offices />
     </div>

@@ -6,7 +6,7 @@ import { fadeIn } from "../variants";
 
 const Vision = () => {
   return (
-    <div className="pb-60" > 
+    <div className="-mb-20" > 
       <div className=" bg-black flex-col lg:flex-row flex pt-24 mb-24 lg:justify-center lg:mx-8 my-32">
         {/* Left Side div */}
         <motion.div
