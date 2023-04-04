@@ -6,6 +6,7 @@ import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/CustomSoftwareVideo.mp4";
 import { Link } from "react-scroll";
 import Custom from "../../assets/Services/customsofware.json";
+import ServiceCard from "../../components/ServiceCard"
 
 function CustomSoftware() {
   return (
@@ -72,7 +73,8 @@ function CustomSoftware() {
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Custom} loop={true} />
         </motion.div>
-      </div>
+          </div>
+          <ServiceCard />
     </div>
   );
 }

@@ -22,10 +22,10 @@ export const ContactUs = () => {
     }
     emailjs
       .sendForm(
-        "service_kj89owr",
-        "template_cbk7yl9",
+        "3A-BKiyEdm2eMGJoN",
+        "template_yaeeqvv",
         form.current,
-        "hkQ-2hdK6LTVFgJnT"
+        "3A-BKiyEdm2eMGJoN"
       )
       .then(
         (result) => {
