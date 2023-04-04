@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 import ServiceCard from "../../components/ServiceCard";
 import { FaMobileAlt, FaDesktop, FaPaintBrush } from "react-icons/fa";
 import Design from "../../assets/design.json";
+import WhyChooseUs from "../../components/WhyChooseUs";
 
 function GraphicServices() {
   return (
@@ -23,15 +24,13 @@ function GraphicServices() {
             viewport={{ once: false, amount: 0.3 }}
             className="absolute top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
             <p className="text-2xl py-4 text-slate-300 hover:text-main">
-              Mobile App Development
+              Graphic Design
             </p>
             <h1 className="bg-gradient-to-r from-main bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-main lg:text-7xl">
-              We Build Appls People Love To Use
+              Friendly Designs for All Your Graphic Design Needs{" "}
             </h1>
             <p className="text-2xl py-4 text-white hover:text-main">
-              We deliver more than just apps. We deliver experiences. Our fast,
-              responsive and highly scalable mobile app development will help
-              you get ahead of the curve in no time!
+              Your one-stop shop for all your graphic design requirements.
             </p>
             <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
               <Link to="contact">
@@ -120,6 +119,7 @@ function GraphicServices() {
           </Link>
         </div>
       </div>
+      <WhyChooseUs />
     </div>
   );
 }

@@ -8,6 +8,8 @@ import { Link } from "react-scroll";
 import DevOpsLottie from "../../assets/Services/devops.json";
 import { FaTools, FaRobot, FaTasks } from "react-icons/fa";
 import ServiceCard from "../../components/ServiceCard";
+import WhyChooseUs from "../../components/WhyChooseUs";
+
 
 function DevOps() {
   return (
@@ -118,7 +120,8 @@ function DevOps() {
             Get in Touch
           </motion.button>
         </Link>
-      </div>
+          </div>
+                <WhyChooseUs />
     </div>
   );
 }

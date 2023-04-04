@@ -1,32 +1,44 @@
 import React from "react";
-import CustomServices from "../../components/CustomServices";
-import Services from "../../components/Services";
-import FeaturedWork from "../../components/FeaturedWork";
+import Lottie from "lottie-react";
+import button from "../../assets/mainbutton.json";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import { Link } from "react-router-dom";
+import BgVideo from "../../assets/videos/mainVideo.mp4";
+import { Link } from "react-scroll";
+import Services from "../../components/Services";
 
 function MainServices() {
   return (
     <div>
-      <div className="ml-16 -mt-72">
-        <CustomServices />
-      </div>
-      <Services />
-      <div className="py-40"></div>
-      <FeaturedWork />
-      <Link to="/portfolio">
-        <motion.button
-          variants={fadeIn("right", 0.5)}
+    <section className="page">
+      <div className="overlay"></div>
+      <video src={BgVideo} autoPlay loop muted></video>
+      <div className="page__content text-2xl">
+        <motion.div
+          variants={fadeIn("down", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          type="button"
-          className="text-black mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
-          See more
-        </motion.button>
-      </Link>
-      <div className=" pb-80" />
+          className="absolute lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
+          <p className="text-2xl py-4 text-slate-300 hover:text-main">
+            Services
+          </p>
+          <h1 className="bg-gradient-to-r from-main bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-main lg:text-7xl">
+            We Engineer Software Solutions{" "}
+          </h1>
+          <p className="text-2xl py-4 text-white hover:text-main">
+            We help you envision technology that powers the future of your
+            business
+          </p>
+          <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
+            <Link to="contact">
+              <Lottie animationData={button} loop={true} />
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+      </section>
+      <Services />
     </div>
   );
 }

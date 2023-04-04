@@ -14,6 +14,8 @@ import {
   FaShieldAlt,
   FaUser,
 } from "react-icons/fa";
+import WhyChooseUs from "../../components/WhyChooseUs";
+
 
 function MobileServices() {
   return (
@@ -169,6 +171,8 @@ function MobileServices() {
           </motion.button>
         </Link>
       </div>
+            <WhyChooseUs />
+
     </div>
   );
 }

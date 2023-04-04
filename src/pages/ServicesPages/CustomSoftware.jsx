@@ -8,6 +8,8 @@ import { Link } from "react-scroll";
 import Custom from "../../assets/Services/customsofware.json";
 import ServiceCardList from "../../components/ServiceCardList";
 import { FaShieldAlt } from "react-icons/fa";
+import WhyChooseUs from "../../components/WhyChooseUs";
+
 
 function CustomSoftware() {
   return (
@@ -119,7 +121,9 @@ function CustomSoftware() {
           </motion.button>
         </Link>
       </div>
-      </div>
+          </div>
+                <WhyChooseUs />
+
     </div>
   );
 }
