@@ -9,7 +9,7 @@ const Nav = () => {
   function handleMouseLeave() {
     dropdownTimeoutRef.current = setTimeout(() => {
       setIsDropdownOpen(false);
-    }, 1500);
+    }, 2000);
   }
 
   function handleMouseEnter() {
@@ -43,73 +43,94 @@ const Nav = () => {
                     <FaCaretDown className="inline-block ml-1" />
                   </button>
                 </div>
+
                 <ul
-                  className={`absolute mt-2 py-2 w-48 bg-white font-first text-sm rounded-md shadow-lg ${
-                    isDropdownOpen ? "" : "hidden"
-                  }`}>
-                  <li>
-                    <a
-                      href="/services/mobiledevelopment"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Mobile Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/services/webdevelopment"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Web Development
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/services/graphicdesign"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Graphic Design
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/services/userinterface"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      UI/UX Design
-                    </a>
-                  </li>
-                   <li>
-                    <a
-                      href="/services/qatesting"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      QA & Testing
-                    </a>
-                  </li>
-                   <li>
-                    <a
-                      href="/services/customservices"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Custom Software
-                    </a>
-                  </li>
-                   <li>
-                    <a
-                      href="/services/devops"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Devops
-                    </a>
-                  </li>
-                   <li>
-                    <a
-                      href="/services/cybersecurity"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Cyber Security
-                    </a>
-                  </li>
-                     <li>
-                    <a
-                      href="/services"
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      See more..
-                    </a>
-                  </li>
+                  className={`${
+                    isDropdownOpen ? "block" : "hidden"
+                  } absolute mt-2 py-2 font-first w-max bg-white rounded-md shadow-lg z-50`}>
+                  <div className="flex mt-4 px-8 flex-row w-full">
+                    <div className="mx-4">
+                      <span className="text-black underline">
+                        Software Services
+                      </span>
+                      <li>
+                        <a
+                          href="/services/mobiledevelopment"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Mobile Development
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/webdevelopment"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Web Development
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/customservices"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Custom Software
+                        </a>
+                      </li>
+                    </div>
+                    <div className="mx-4">
+                      <span className="text-black underline">
+                        Engineering Services
+                      </span>
+                      <li>
+                        <a
+                          href="/services/qatesting"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          QA&Testing
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="/services/devops"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Devops
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/cybersecurity"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Cyber Security
+                        </a>
+                      </li>
+                    </div>
+                    <div className="mx-4">
+                      <span className="text-black underline">
+                        Design Services
+                      </span>
+                      <li>
+                        <a
+                          href="/services/graphicdesign"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          Graphic Design
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/userinterface"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
+                          UI/UX Design
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                  <div className="mx-auto flex justify-center">
+                    <li>
+                      <a
+                        href="/services"
+                        className="block text-green-500 underline px-4 py-2 text-xl mt-4 hover:bg-gray-100 transition duration-150 ease-in-out">
+                        See more..
+                      </a>
+                    </li>
+                  </div>
                 </ul>
               </li>
             );
