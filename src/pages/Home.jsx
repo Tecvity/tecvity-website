@@ -35,7 +35,7 @@ function Home() {
       </Link>
 
       <Vision />
-      <div className="-mt-80 pb-80">
+      <div className=" pb-80">
         <Link to="/about">
         <motion.button
           variants={fadeIn("right", 0.5)}
