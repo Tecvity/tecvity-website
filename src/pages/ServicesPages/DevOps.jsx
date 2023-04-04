@@ -19,7 +19,7 @@ function DevOps() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="absolute top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
+            className="absolute lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
             <p className="text-2xl py-4 text-slate-300 hover:text-main">
               DevOps{" "}
             </p>
@@ -43,14 +43,7 @@ function DevOps() {
         {/* Left Side div */}
 
         {/* Right Side Div */}
-        <motion.div
-          variants={fadeIn("right", 0.5)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-          className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
-          <Lottie animationData={DevOpsLottie} loop={true} />
-        </motion.div>
+
         <motion.div
           variants={fadeIn("left", 0.5)}
           initial="hidden"
@@ -73,6 +66,14 @@ function DevOps() {
             practices, and are highly qualified to help you automate and
             standardize processes for infrastructure deployment.
           </p>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
+          <Lottie animationData={DevOpsLottie} loop={true} />
         </motion.div>
       </div>
     </div>
