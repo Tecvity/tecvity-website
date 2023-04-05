@@ -160,7 +160,7 @@ Our full-stack engineering experts develop enterprise-grade solutions tailored t
             description="From proactive planning to crisis management, we will help you overcome your most complex cybersecurity issues."
           />
         </div>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex mx-auto justify-center flex-col lg:flex-row">
           <ServiceCard
             icon={FaArrowRight}
             iconColor="text-blue-600"
@@ -188,7 +188,7 @@ Our full-stack engineering experts develop enterprise-grade solutions tailored t
           </Link>
         </div>
       </div>
-      <WhyChooseUs />|
+      <WhyChooseUs />
     </div>
   );
 }
