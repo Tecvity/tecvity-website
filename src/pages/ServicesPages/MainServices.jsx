@@ -43,7 +43,12 @@ function MainServices() {
       </section>
       {/* LEFT SİDE DİV */}
       <div className="font-first mt-36 lg:mx-8 py-60 flex flex-col lg:flex-row ">
-        <div className="flex lg:w-1/2 my-auto flex-col">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex lg:w-1/2 my-auto flex-col">
           <div className="text-main lg:ml-5 my-4 text-center text-3xl lg:text-6xl">
             <h1>Software Development</h1>
           </div>
@@ -60,7 +65,7 @@ function MainServices() {
               Explore Our Digital Solutions
             </button>
           </Link>
-        </div>
+        </motion.div>
         {/* RİGHT SİDE DİV */}
         <div className="flex justify-items-end mx-auto flex-col lg:flex-row">
           <div className="mt-24 lg:my-auto">
@@ -69,11 +74,13 @@ function MainServices() {
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="Web Development"
+                href={"/services/webdevelopment"}
               />
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="Mobile Development"
+                href={"/services/mobiledevelopment"}
               />
             </div>
             <div className="flex-col lg:flex-row flex">
@@ -81,11 +88,13 @@ function MainServices() {
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="Custom Software"
+                href={"/services/customservices"}
               />
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="QA & Testing"
+                href={"/services/qatesting"}
               />
             </div>
             <div className="flex-col lg:flex-row flex">
@@ -93,11 +102,13 @@ function MainServices() {
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="DevOps"
+                href={"/services/devops"}
               />
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="Cyber Security"
+                href={"/services/cybersecurity"}
               />
             </div>
             <div className="flex-col lg:flex-row flex">
@@ -105,20 +116,27 @@ function MainServices() {
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="Graphic Design"
+                href={"/services/graphicdesign"}
               />
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
                 title="User Interface"
+                href={"/services/userinterface"}
               />
             </div>
           </div>
         </div>
       </div>
       <div className="py-60 lg:mx-24">
-        <h1 className="text-3xl font-bold mt-30 text-center mb-4 lg:mb-8 text-main lg:text-6xl">
+        <motion.h1
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-3xl font-bold mt-30 text-center mb-4 lg:mb-8 text-main lg:text-6xl">
           Tecvity Services For You
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaArrowRight}
