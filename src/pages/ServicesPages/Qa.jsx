@@ -85,9 +85,14 @@ function MobileServices() {
         </motion.div>
       </div>
       <div className="pt-60">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Our Services
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaBug}
@@ -141,12 +146,12 @@ function MobileServices() {
             title="Regression Testing"
             description="Ensure that changes and updates do not introduce new bugs."
           />
-        <ServiceCard
-          icon={FaUser}
-          iconColor="text-blue-600"
-          title="User Acceptance Testing (UAT)"
-          description="Evaluate if your software meets end-users' needs."
-        />
+          <ServiceCard
+            icon={FaUser}
+            iconColor="text-blue-600"
+            title="User Acceptance Testing (UAT)"
+            description="Evaluate if your software meets end-users' needs."
+          />
         </div>
         <div className="flex mx-auto justify-center flex-col lg:flex-row">
           <ServiceCard

@@ -78,9 +78,12 @@ function CustomSoftware() {
         </motion.div>
       </div>
       <div className="py-60 lg:mx-24">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-6xl">
+        <motion.h1   variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }} className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-6xl">
           Custom Software Solutions For Business Of Any Size
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCardList
             icon={FaShieldAlt}

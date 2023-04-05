@@ -81,12 +81,18 @@ function DevOps() {
         </motion.div>
       </div>
       <div className="pt-60">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1 variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }} className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Custom DevOps Solutions
-        </h1>
-        <p className="text-lg mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
+        </motion.h1>
+        <motion.p variants={fadeIn("left", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }} className="text-lg mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
           Accelerating software delivery with DevOps expertise{" "}
-        </p>
+        </motion.p>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaTools}

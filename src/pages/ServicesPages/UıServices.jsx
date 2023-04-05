@@ -5,12 +5,11 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/UiVideo.mp4";
 import { Link } from "react-scroll";
-import Mahmut from "../../assets/WhatWeDo.json"
+import Mahmut from "../../assets/WhatWeDo.json";
 import ServiceCard from "../../components/ServiceCard";
 import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
 import { MdSecurity, MdSettings } from "react-icons/md";
 import WhyChooseUs from "../../components/WhyChooseUs";
-
 
 function Hero() {
   return (
@@ -81,9 +80,14 @@ function Hero() {
         </motion.div>
       </div>
       <div className="pt-60">
-          <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Our Services
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaUser}
@@ -138,8 +142,7 @@ function Hero() {
           </motion.button>
         </Link>
       </div>
-            <WhyChooseUs />
-
+      <WhyChooseUs />
     </div>
   );
 }

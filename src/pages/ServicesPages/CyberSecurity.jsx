@@ -74,9 +74,14 @@ function CyberSecurtiy() {
         </motion.div>
       </div>
       <div className="pt-60">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Our Services
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaShieldAlt}
@@ -85,13 +90,13 @@ function CyberSecurtiy() {
             description="Simulating cyber attacks on a company's network or web applications to identify vulnerabilities and weaknesses."
           />
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Vulnerability Management"
             description="Identifying and managing vulnerabilities in a company's network, software, and systems."
           />
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Incident Response"
             description="Quickly identifying and responding to cyber security incidents to minimize damage and restore normal operations."
@@ -99,19 +104,19 @@ function CyberSecurtiy() {
         </div>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Security Monitoring"
             description="Constantly monitoring a company's network and systems for signs of cyber attacks or intrusions."
           />
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Compliance Management"
             description="Ensuring that a company's security practices comply with relevant laws, regulations, and industry standards."
           />
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Identity and Access Management (IAM)"
             description="Managing user identities and access rights to protect against unauthorized access to sensitive data."
@@ -119,19 +124,19 @@ function CyberSecurtiy() {
         </div>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
-            icon={FaShieldAlt }
+            icon={FaShieldAlt}
             iconColor="text-blue-600"
             title="Data Loss Prevention (DLP) Services"
             description="Identifying, monitoring, and protecting sensitive data from unauthorized access or loss."
           />
           <ServiceCard
-            icon={MdSecurity }
+            icon={MdSecurity}
             iconColor="text-blue-600"
             title="Security Information & Event Management (SIEM)"
             description="Collecting, analyzing, and responding to security-related data from various sources, such as network devices, servers, and applications."
           />
           <ServiceCard
-            icon={BiCloud }
+            icon={BiCloud}
             iconColor="text-blue-600"
             title="Cloud Security Services"
             description="Securing the company's data and applications hosted on cloud platforms like AWS, Azure and GCP."
@@ -139,13 +144,13 @@ function CyberSecurtiy() {
         </div>
         <div className="flex mx-auto justify-center flex-col lg:flex-row">
           <ServiceCard
-            icon={RiComputerLine }
+            icon={RiComputerLine}
             iconColor="text-blue-600"
             title="Endpoint Security Services"
             description="Protecting company's devices like laptops, smartphones, and tablets from security threats and vulnerabilities."
           />
           <ServiceCard
-            icon={IoIosPhonePortrait }
+            icon={IoIosPhonePortrait}
             iconColor="text-blue-600"
             title="Uncover Your Risks Now!"
             description="Protect Your Sensitive Data"

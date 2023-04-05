@@ -7,10 +7,8 @@ import BgVideo from "../../assets/videos/MobileVideo.mp4";
 import { Link } from "react-scroll";
 import Mobile from "../../assets/mobile.json";
 import ServiceCard from "../../components/ServiceCard";
-import { FaMobileAlt, FaMicrochip } from 'react-icons/fa';
+import { FaMobileAlt, FaMicrochip } from "react-icons/fa";
 import WhyChooseUs from "../../components/WhyChooseUs";
-
-
 
 function MobileServices() {
   return (
@@ -79,33 +77,42 @@ function MobileServices() {
         </motion.div>
       </div>
       <div className="py-60 lg:mx-12">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Our Mobile App Development Services{" "}
-        </h1>
-        <p className="text-md mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-md mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
           Delight your customers with feature-rich, expressive apps that are
           native to their devices{" "}
-        </p>
+        </motion.p>
         <div className="flex flex-col lg:flex-row">
-              <ServiceCard
-      icon={FaMobileAlt}
-      iconColor="text-blue-600"
-      title="Native Mobile App Development"
-      description="Our native mobile app developers can build apps that fit all your needs, from security to design."
-    />
-    <ServiceCard
-      icon={FaMobileAlt}
-      iconColor="text-blue-600"
-      title="Hybrid Mobile App Development"
-      description="We help you develop apps that are fully functional on different devices, leveraging a unique blend of technologies."
-    />
-    <ServiceCard
-      icon={FaMicrochip}
-      iconColor="text-blue-600"
-      title="Wearables and Embedded Software"
-      description="We can create companion apps for a number of wearable devices, integrate with smart devices or proprietary peripherals."
-    />
-
+          <ServiceCard
+            icon={FaMobileAlt}
+            iconColor="text-blue-600"
+            title="Native Mobile App Development"
+            description="Our native mobile app developers can build apps that fit all your needs, from security to design."
+          />
+          <ServiceCard
+            icon={FaMobileAlt}
+            iconColor="text-blue-600"
+            title="Hybrid Mobile App Development"
+            description="We help you develop apps that are fully functional on different devices, leveraging a unique blend of technologies."
+          />
+          <ServiceCard
+            icon={FaMicrochip}
+            iconColor="text-blue-600"
+            title="Wearables and Embedded Software"
+            description="We can create companion apps for a number of wearable devices, integrate with smart devices or proprietary peripherals."
+          />
         </div>
         <div>
           <Link to="contact">
@@ -121,8 +128,7 @@ function MobileServices() {
           </Link>
         </div>
       </div>
-            <WhyChooseUs />
-
+      <WhyChooseUs />
     </div>
   );
 }
