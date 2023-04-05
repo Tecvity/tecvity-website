@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 function CustomServices() {
   return (
-    <div className="mt-72 lg:mt-96 pt-32 ml-5 lg:ml-16  mb-80">
+    <div className="mt-72 lg:mt-96 pt-32 ml-8 lg:ml-16  mb-80">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
