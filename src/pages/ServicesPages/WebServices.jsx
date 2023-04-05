@@ -80,9 +80,14 @@ function Hero() {
         </motion.div>
       </div>
       <div className="pt-60">
-        <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+        <motion.h1
+          variants={fadeIn("right", 0.5)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
           Our Services
-        </h1>
+        </motion.h1>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
             icon={FaLaptopCode}
