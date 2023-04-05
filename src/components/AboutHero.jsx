@@ -48,7 +48,7 @@ function AboutHero() {
         <motion.div variants={fadeIn("right", 0.5)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }} className="w-1/4 lg:w-1/5 hidden lg:block absolute bottom-14 right-10 lg:right-24 lg:bottom-8">
+          viewport={{ once: false, amount: 0.3 }} className="w-1/4 lg:w-1/5 hidden lg:block absolute bottom-5 right-10 lg:right-24 lg:-bottom-20">
           <Lottie animationData={about3} loop={true} />
         </motion.div>
         <motion.div
