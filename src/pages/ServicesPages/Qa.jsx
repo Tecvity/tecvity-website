@@ -16,7 +16,6 @@ import {
 } from "react-icons/fa";
 import WhyChooseUs from "../../components/WhyChooseUs";
 
-
 function MobileServices() {
   return (
     <div>
@@ -142,14 +141,14 @@ function MobileServices() {
             title="Regression Testing"
             description="Ensure that changes and updates do not introduce new bugs."
           />
+        <ServiceCard
+          icon={FaUser}
+          iconColor="text-blue-600"
+          title="User Acceptance Testing (UAT)"
+          description="Evaluate if your software meets end-users' needs."
+        />
         </div>
         <div className="flex mx-auto justify-center flex-col lg:flex-row">
-          <ServiceCard
-            icon={FaUser}
-            iconColor="text-blue-600"
-            title="User Acceptance Testing (UAT)"
-            description="Evaluate if your software meets end-users' needs."
-          />
           <ServiceCard
             icon={FaCheckCircle}
             iconColor="text-pink-600"
@@ -171,8 +170,7 @@ function MobileServices() {
           </motion.button>
         </Link>
       </div>
-            <WhyChooseUs />
-
+      <WhyChooseUs />
     </div>
   );
 }
