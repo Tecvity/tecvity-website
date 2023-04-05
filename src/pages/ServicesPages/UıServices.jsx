@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/UiVideo.mp4";
 import { Link } from "react-scroll";
-import Ui from "../../assets/Services/UİUx.json";
+import Mahmut from "../../assets/WhatWeDo.json"
 import ServiceCard from "../../components/ServiceCard";
 import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
 import { MdSecurity, MdSettings } from "react-icons/md";
@@ -77,7 +77,7 @@ function Hero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
-          <Lottie animationData={Ui} loop={true} />
+          <Lottie animationData={Mahmut} loop={true} />
         </motion.div>
       </div>
       <div className="pt-60">
