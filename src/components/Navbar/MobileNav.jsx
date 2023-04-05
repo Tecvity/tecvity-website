@@ -7,7 +7,7 @@ const MobileNav = () => {
 
   return (
     <div className="bg-main font-first text-black w-full h-full">
-      <ul className="h-full flex flex-col text-black justify-center items-center gap-y-8">
+      <ul className=" pt-32 flex flex-col text-black justify-center items-center gap-y-8">
         {nav.map((item, index) => {
           const { href, name } = item;
 
