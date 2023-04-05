@@ -21,7 +21,7 @@ const BlogPost = () => {
         src={selectedBlog.img}
         alt={selectedBlog.title}
       />
-      <p className="text-lg">{selectedBlog.description}</p>
+      <p className="text-md mt-10 text-left ml-5 lg:ml-16">{selectedBlog.description}</p>
     </div>
   );
 };
