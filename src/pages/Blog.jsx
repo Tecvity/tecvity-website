@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { blog } from "../data";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -26,6 +28,14 @@ const Blog = () => {
 
   return (
     <div className="flex font-first text-center flex-col mt-32 lg:mt-40 items-center">
+      <motion.div
+        variants={fadeIn("up", 0.5)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="font-first mt-24 lg:mt-64 text-4xl text-main text-center lg:text-7xl">
+        <h1>Blog</h1>
+      </motion.div>
       {paginatedBlog.map((item) => (
         <div
           key={item.id}

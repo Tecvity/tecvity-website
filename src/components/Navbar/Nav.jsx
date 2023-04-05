@@ -9,7 +9,7 @@ const Nav = () => {
   function handleMouseLeave() {
     dropdownTimeoutRef.current = setTimeout(() => {
       setIsDropdownOpen(false);
-    }, 2000);
+    }, 100);
   }
 
   function handleMouseEnter() {
@@ -32,13 +32,15 @@ const Nav = () => {
 
           if (name === "Services") {
             return (
-              <li key={index} className="relative">
+              <li
+                key={index}
+                onMouseLeave={handleMouseLeave}
+                onMouseEnter={handleMouseEnter}
+                className="relative">
                 <div className="text-white hover:text-black">
                   <button
                     className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
-                    onMouseEnter={handleMouseEnter}
-                    onClick={handleServiceClick}
-                    onMouseLeave={handleMouseLeave}>
+                    onClick={handleServiceClick}>
                     {name}
                     <FaCaretDown className="inline-block ml-1" />
                   </button>
