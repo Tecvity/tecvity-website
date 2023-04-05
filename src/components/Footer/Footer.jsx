@@ -9,7 +9,7 @@ import {
   FaYoutube,
   FaMastodon,
 } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,9 +30,7 @@ const Footer = () => {
                 </li>
               </Link>
               <Link to="/services/userinterface">
-                <li className="hover:text-green-600 ">
-                  User Interface
-                </li>
+                <li className="hover:text-green-600 ">User Interface</li>
               </Link>
               <Link to="/services/graphicdesign">
                 <li className="hover:text-green-600 ">UI/UX Design</li>
@@ -44,10 +42,18 @@ const Footer = () => {
               Solutions
             </h3>
             <ul>
-              <li className="hover:text-green-600 ">Azure</li>
-              <li className="hover:text-green-600 ">AWS</li>
-              <li className="hover:text-green-600 ">Cloud Migration</li>
-              <li className="hover:text-green-600 ">Cyber Security</li>
+              <li className="hover:text-green-600 ">
+                <a href="/services/customservices">Custom Software</a>
+              </li>
+              <li className="hover:text-green-600 ">
+                <a href="/services/qatesting"> QA & Testing</a>
+              </li>
+              <li className="hover:text-green-600 ">
+                <a href="/services/devops">DevOps</a>
+              </li>
+              <li className="hover:text-green-600 ">
+                <a href="/services/cybersecurity">Cyber Security</a>
+              </li>
             </ul>
           </div>
           <div>
