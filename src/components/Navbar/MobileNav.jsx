@@ -6,17 +6,17 @@ const MobileNav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="bg-main font-first w-full h-full">
-      <ul className="h-full flex flex-col justify-center items-center gap-y-8">
+    <div className="bg-main font-first text-black w-full h-full">
+      <ul className="h-full flex flex-col text-black justify-center items-center gap-y-8">
         {nav.map((item, index) => {
           const { href, name } = item;
 
           if (name === "Services") {
             return (
-              <li key={index} className="relative">
-                <div className=" text-white hover:text-black">
+              <li key={index} className="text-black relative">
+                <div className=" text-black ">
                   <button
-                    className="link text-white text-xl hover:text-black hover:underline transition focus:outline-none"
+                    className="link text-black text-xl hover:text-black hover:underline transition focus:outline-none"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                     {name}
                     <FaCaretDown className="inline-block ml-1" />
@@ -116,7 +116,7 @@ const MobileNav = () => {
           return (
             <li key={index}>
               <a
-                className="link text-white text-xl hover:text-black hover:underline transition"
+                className="link text-black text-xl hover:text-black hover:underline transition"
                 href={href}>
                 {name}
               </a>
