@@ -14,7 +14,7 @@ function AboutHero() {
 
   return (
     <section id="about" ref={ref}>
-      <div className="bg-yellow mx-18 lg:mx-48">
+      <div className="bg-yellow mx-18 pt-12 lg:mx-48">
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
@@ -42,7 +42,7 @@ function AboutHero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-1/6 lg:w-2/12 absolute top-32 left-10 lg:top-48">
+          className="w-1/6 lg:w-2/12 absolute top-20 left-10 lg:top-48">
           <Lottie animationData={about1} loop={true} />
         </motion.div>
         <motion.div variants={fadeIn("right", 0.5)}

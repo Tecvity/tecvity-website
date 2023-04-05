@@ -20,7 +20,7 @@ function About() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-6xl lg:text-7xl -mb-24 lg:-m-mb40 text-center text-main mt-48">
+        className="text-6xl lg:text-7xl -mb-24 lg:-m-mb40  text-center text-main mt-48">
         About Us
       </motion.h1>
       <div className="flex-col bg-black flex mb-4 lg:flex-row lg:justify-center lg:mx-8 my-32">

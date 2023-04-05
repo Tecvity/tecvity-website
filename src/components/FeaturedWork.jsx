@@ -12,7 +12,7 @@ import work3 from "../assets/images/portfolio/terravirtua.jpg";
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
-const slide_img = [work1, work2, work3];
+const slide_img = [work1, work2, work3,];
 
 const FeaturedWork = () => {
   const swiperRef = useRef(null);

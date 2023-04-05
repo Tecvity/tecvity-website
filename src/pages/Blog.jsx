@@ -25,7 +25,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="flex font-first text-center flex-col mt-10 lg:mt-40 items-center">
+    <div className="flex font-first text-center flex-col mt-32 lg:mt-40 items-center">
       {paginatedBlog.map((item) => (
         <div
           key={item.id}
