@@ -74,7 +74,10 @@ function About() {
         <Values />
       </div>
 
+      <div className="hidden  lg:block" >
+
       <WhatWeDo />
+      </div>
       <a href="/services">
         <motion.button
           variants={fadeIn("right", 0.5)}
