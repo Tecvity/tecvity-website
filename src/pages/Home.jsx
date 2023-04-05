@@ -6,18 +6,20 @@ import Vision from "../components/Vision";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
+import WhatWeDo from "../components/WhatWeDo";
 
 function Home() {
   return (
     <div>
       <Hero />
-      <Services />
+      {/* <Services /> */ }
+      <WhatWeDo />
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex pb-80 -mt-32 lg:-mt-40 justify-center">
+        className="flex pb-80 -mt-60 lg:-mt-40 justify-center">
         <Link to="/services">
           <button
             type="button"
@@ -39,7 +41,7 @@ function Home() {
       </Link>
 
       <Vision />
-      <div className="lg:-mt-24 pb-80">
+      <div className="lg:-mt-24 pb-40">
         <Link to="/about">
           <motion.button
             variants={fadeIn("right", 0.5)}
@@ -51,6 +53,7 @@ function Home() {
             About Us
           </motion.button>
         </Link>
+        <Services />
       </div>
     </div>
   );

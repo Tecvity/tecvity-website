@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import WhatWe from "../assets/WhatWeDo.json";
-import WhatWe2 from "../assets/hero-left.json"
+import WhatWe2 from "../assets/hero-left.json";
 
 const services = [
   {
@@ -41,32 +41,28 @@ const services = [
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
-        href: "/services/cybersecurity"
-
+    href: "/services/cybersecurity",
   },
   {
     name: "Devops",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
-        href: "/services/devops"
-
+    href: "/services/devops",
   },
   {
     name: "QA & Testing",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
-        href: "/services/qatesting"
-
+    href: "/services/qatesting",
   },
   {
     name: "Custom Software",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
-        href: "/services/customservices"
-
+    href: "/services/customservices",
   },
 ];
 
@@ -91,24 +87,24 @@ function WhatWeDo() {
             <div className="left-0 top-0 mt-12 hidden lg:block">
               <Lottie animationData={WhatWe} loop={true} />
             </div>
-             <div className="left-0 top-0 mt-40
+            <div
+              className="left-0 top-0 mt-40
               hidden lg:block">
               <Lottie animationData={WhatWe2} loop={true} />
             </div>
           </motion.div>
           {/* services */}
-          <motion.div
-            variants={fadeIn("left", 0.5)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 ">
+          <div>
             {/* service list */}
             <div>
               {services.map((service, index) => {
                 const { name, description, link, href } = service;
                 return (
-                  <div
+                  <motion.div
+                    variants={fadeIn("right", 0.3)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
                     className="border-b border-white/20 h-[200px] lg:h-[146px] mb-[38px] flex"
                     key={index}>
                     <div className="max-w-[476px]">
@@ -131,11 +127,11 @@ function WhatWeDo() {
                         {link}
                       </Link>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
