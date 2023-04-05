@@ -5,6 +5,7 @@ import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import WhatWe from "../assets/WhatWeDo.json";
+import WhatWe2 from "../assets/hero-left.json"
 
 const services = [
   {
@@ -12,24 +13,60 @@ const services = [
     description:
       "We create user-friendly and visually appealing interfaces that meet your goals. Our focus is on user experience and design principles.",
     link: "Learn More",
+    href: "/services/userinterface",
   },
   {
     name: "Mobile Development",
     description:
       "We bring your website to life with efficient, optimized code. We offer full-service web development fast, secure, and search engine friendly.",
     link: "Learn More",
+    href: "/services/mobiledevelopment",
   },
   {
     name: "Graphic Design",
     description:
       "We offer services to help you reach your target audience and achieve your goals. We develop custom strategies for search engine optimization, social media, and pay-per-click advertising.",
     link: "Learn More",
+    href: "/services/graphicdesign",
   },
   {
     name: "Web Development",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
+    href: "/services/webdevelopment",
+  },
+  {
+    name: "CyberSecurtiy",
+    description:
+      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+    link: "Learn More",
+        href: "/services/cybersecurity"
+
+  },
+  {
+    name: "Devops",
+    description:
+      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+    link: "Learn More",
+        href: "/services/devops"
+
+  },
+  {
+    name: "QA & Testing",
+    description:
+      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+    link: "Learn More",
+        href: "/services/qatesting"
+
+  },
+  {
+    name: "Custom Software",
+    description:
+      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+    link: "Learn More",
+        href: "/services/customservices"
+
   },
 ];
 
@@ -51,8 +88,12 @@ function WhatWeDo() {
             <h3 className="max-w[455px] text-center lg:text-left mb-16">
               Solve Your Toughest Challenges
             </h3>
-            <div className="left-0 top-0 hidden lg:block">
+            <div className="left-0 top-0 mt-12 hidden lg:block">
               <Lottie animationData={WhatWe} loop={true} />
+            </div>
+             <div className="left-0 top-0 mt-40
+              hidden lg:block">
+              <Lottie animationData={WhatWe2} loop={true} />
             </div>
           </motion.div>
           {/* services */}
@@ -65,7 +106,7 @@ function WhatWeDo() {
             {/* service list */}
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description, link, href } = service;
                 return (
                   <div
                     className="border-b border-white/20 h-[200px] lg:h-[146px] mb-[38px] flex"
@@ -80,11 +121,13 @@ function WhatWeDo() {
                     </div>
                     <div className="flex flex-col flex-1 items-end">
                       <Link
-                        to="/services"
+                        to={href}
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center">
                         <BsArrowUpRight />
                       </Link>
-                      <Link to="/services" className="text-gradient hover:text-xl text-xs border-2 p-2 ml-3 lg:border-0 rounded-full border-main">
+                      <Link
+                        to={href}
+                        className="text-gradient hover:text-xl text-xs border-2 p-2 ml-3 lg:border-0 rounded-full border-main">
                         {link}
                       </Link>
                     </div>
