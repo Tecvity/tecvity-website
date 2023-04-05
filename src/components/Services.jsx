@@ -1,13 +1,13 @@
 import React from "react";
-import UI from "../assets/user-interface.json";
+import User from "../assets/user-interface.json";
 import Lottie from "lottie-react";
 import Mobile from "../assets/mobil.json";
 import Web from "../assets/web-dev.json";
 import Graphic from "../assets/Services/graphic.json";
-import qa from "../assets/images/test.jpg";
-import cyber from "../assets/images/cyber.jpg";
-import custom from "../assets/images/custom.jpg";
-import devops from "../assets/images/devops.png";
+import qa from "../assets/Services/test.jpg";
+import cyber from "../assets/Services/cyber.jpg";
+import custom from "../assets/Services/custom.jpg"
+import devops from "../assets/Services/devops.png";
 import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
@@ -36,7 +36,7 @@ function Services() {
               className="text-white font-first text-center text-sm xl:text-xl ">
               <h1 className="">UI Design</h1>
               <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
-                <Lottie animationData={UI} loop={true} />
+                <Lottie animationData={User} loop={true} />
               </div>
             </motion.div>
           </Link>

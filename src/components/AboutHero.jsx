@@ -1,5 +1,4 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -8,12 +7,10 @@ import about1 from "../assets/about1.json";
 import about3 from "../assets/hero-left.json";
 
 function AboutHero() {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
+  
 
   return (
-    <section id="about" ref={ref}>
+    <section id="about">
       <div className="bg-yellow mx-18 pt-12 lg:mx-48">
         <motion.div
           variants={fadeIn("up", 0.5)}
@@ -59,7 +56,7 @@ function AboutHero() {
           className="flex-row text-main mx-auto pb-32 justify-center flex">
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first mb-2">
-              {inView ? <CountUp start={0} end={4} duration={3} /> : null}
+               <CountUp start={0} end={4} duration={9} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Years of <br />
@@ -68,7 +65,7 @@ function AboutHero() {
           </div>
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first mb-2">
-              {inView ? <CountUp start={0} end={74} duration={5} /> : null}
+               <CountUp start={0} end={74} duration={10} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Projects <br />
@@ -77,7 +74,7 @@ function AboutHero() {
           </div>
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first  mb-2">
-              {inView ? <CountUp start={0} end={52} duration={7} /> : null}
+              <CountUp start={0} end={52} duration={12} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Satisfied <br />
