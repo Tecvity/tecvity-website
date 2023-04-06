@@ -18,7 +18,7 @@ function AboutHero() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className="font-first mt-24 lg:mt-64 text-4xl text-main text-center lg:text-7xl">
-          <h1>Delivering Exceptional Technology Solutions</h1>
+          <h1>Delivering Creative Technological Solutions</h1>
         </motion.div>
         <motion.div
           variants={fadeIn("right", 0.5)}
@@ -28,10 +28,9 @@ function AboutHero() {
           className="font-first text-xl mx-12 my-14 text-white text-center">
           <p>
             Tecvity is a leading software development company located in
-            Gujranwala, Pakistan. We are committed to develop innovative
+            Pakistan. We are committed to develop innovative
             software solutions for leading enterprises in the world, helping
-            them grow their businesses using latest technology solutions. 4+
-            Years In Business 50+ Clients Trust Us
+            them grow their businesses using latest technology solutions. 
           </p>
         </motion.div>
         <motion.div
@@ -56,16 +55,16 @@ function AboutHero() {
           className="flex-row text-main mx-auto pb-32 justify-center flex">
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first mb-2">
-               <CountUp start={0} end={4} duration={9} />
+               <CountUp start={0} end={5} duration={9} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Years of <br />
-              Experince
+              Experience
             </div>
           </div>
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first mb-2">
-               <CountUp start={0} end={74} duration={10} />
+               <CountUp start={0} end={25} duration={10} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Projects <br />
@@ -74,7 +73,7 @@ function AboutHero() {
           </div>
           <div>
             <div className="text-[40px] mx-2 lg:mx-8 font-first  mb-2">
-              <CountUp start={0} end={52} duration={12} />
+              <CountUp start={0} end={20} duration={12} />
             </div>
             <div className="font-first text-sm mx-2 lg:mx-8 lg:tex-xl tracking-[2px]">
               Satisfied <br />
