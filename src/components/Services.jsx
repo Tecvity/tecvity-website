@@ -94,7 +94,7 @@ function Services() {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}>
               <div className="text-white font-first text-center text-sm xl:text-xl ">
-                <h1 className="">Qa Testing</h1>
+                <h1 className="">QA & Testing</h1>
               </div>
               <div className="w-1/2 mb-8 lg:mb-12  mx-auto mt-2 lg:mt-8 lg:w-3/5">
                 <img src={qa} alt="Qa-testing" />
@@ -108,7 +108,7 @@ function Services() {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}>
               <div className="text-white font-first text-center text-sm xl:text-xl ">
-                <h1 className="">Devops</h1>
+                <h1 className="">DevOps</h1>
               </div>
               <div className="w-1/2 mb-8 lg:mb-12  mx-auto mt-2 lg:mt-8 lg:w-3/5">
                 <img src={devops} alt="" />
