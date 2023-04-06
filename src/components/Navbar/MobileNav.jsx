@@ -49,7 +49,7 @@ const MobileNav = () => {
                         <a
                           href="/services/customservices"
                           className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
-                          Custom Software
+                          Custom Software Development
                         </a>
                       </li>
                     </div>
@@ -61,7 +61,7 @@ const MobileNav = () => {
                         <a
                           href="/services/qatesting"
                           className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
-                          QA&Testing
+                          Quality Assurance
                         </a>
                       </li>
 
@@ -69,7 +69,7 @@ const MobileNav = () => {
                         <a
                           href="/services/devops"
                           className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100 transition duration-150 ease-in-out">
-                          Devops
+                          DevOps
                         </a>
                       </li>
                       <li>
