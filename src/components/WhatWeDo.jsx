@@ -37,14 +37,14 @@ const services = [
     href: "/services/webdevelopment",
   },
   {
-    name: "CyberSecurtiy",
+    name: "CyberSecurity",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
     href: "/services/cybersecurity",
   },
   {
-    name: "Devops",
+    name: "DevOps",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
@@ -58,7 +58,7 @@ const services = [
     href: "/services/qatesting",
   },
   {
-    name: "Custom Software",
+    name: "Custom Software Development",
     description:
       "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
     link: "Learn More",
