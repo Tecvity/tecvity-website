@@ -27,9 +27,9 @@ function WhatMakesUsExpert() {
         viewport={{ once: false, amount: 0.3 }}
         className="text-lg mx-8 lg:mx-12 text-white lg:my-12 mt-4 text-center font-first lg:text-xl "
       >
-        Tecvity is an expert software company with 13 years of experience, a
-        workforce of 100+ top-notch engineers, hardcore competence, and multiple
-        award-winning services.{" "}
+        Tecvity utilize Agile methodology, prioritize continuous learning, maintain
+        hardcore competence, and employ experienced professionals to deliver
+        innovative and high-quality software solutions.{" "}
       </motion.p>
       <motion.div
         variants={fadeIn("right", 0.3)}
