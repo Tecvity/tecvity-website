@@ -82,14 +82,14 @@ function GraphicServices() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }} className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
-          Our Mobile App Development Services{" "}
+          Our Graphic Design Services{" "}
         </motion.h1>
         <motion.p  variants={fadeIn("left", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }} className="text-md mt-30 text-center mb-4 lg:mb-8 text-white lg:text-xl">
-          Delight your customers with feature-rich, expressive apps that are
-          native to their devices{" "}
+          Delight your customers with feature-rich, expressive designs that are
+          native to their imagination{" "}
         </motion.p>
         <div className="flex flex-col lg:flex-row">
           <ServiceCard
