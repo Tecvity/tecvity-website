@@ -16,7 +16,8 @@ function WhatMakesUsExpert() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-5xl my-12 text-main lg:mt-16 mt-48 text-center font-first lg:text-7xl ">
+        className="text-5xl my-12 text-main lg:mt-16 mt-48 text-center font-first lg:text-7xl "
+      >
         What Makes Us an Expert
       </motion.h1>
       <motion.p
@@ -24,7 +25,8 @@ function WhatMakesUsExpert() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-lg mx-8 lg:mx-12 text-white lg:my-12 mt-4 text-center font-first lg:text-xl ">
+        className="text-lg mx-8 lg:mx-12 text-white lg:my-12 mt-4 text-center font-first lg:text-xl "
+      >
         Tecvity is an expert software company with 13 years of experience, a
         workforce of 100+ top-notch engineers, hardcore competence, and multiple
         award-winning services.{" "}
@@ -34,19 +36,20 @@ function WhatMakesUsExpert() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex flex-col mx-2 lg:mx-24 lg:flex-row items-center">
+        className="flex flex-col mx-2 lg:mx-24 lg:flex-row items-center"
+      >
         <div>
           <ExpertCard
             icon={<Lottie animationData={export1} loop={true} />}
-            title="13 Years of Experience"
-            description="We’ve evolved over a period of 13 years acquiring skills and expertise by designing, developing and deploying the smartest solutions for the world’s leading companies."
+            title="Agile Methodology"
+            description="We use an Agile methodology to ensure efficient and effective project management, enabling us to deliver high-quality solutions on time and within budget."
           />
         </div>
         <div>
           <ExpertCard
             icon={<Lottie animationData={export2} loop={true} />}
-            title="100 + of the World’s Best Engineers"
-            description="With a workforce of 100+ top-notch engineers who are experts in the latest programming languages, we are well-equipped to transform our next customer's business."
+            title="Continuous Learning"
+            description="Our team is committed to continuous learning and development, staying up-to-date with the latest trends and techniques in the industry to provide the best solutions."
           />
         </div>
       </motion.div>
@@ -55,7 +58,8 @@ function WhatMakesUsExpert() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex flex-col mx-2 lg:mx-24  lg:flex-row items-center">
+        className="flex flex-col mx-2 lg:mx-24  lg:flex-row items-center"
+      >
         <div>
           <ExpertCard
             icon={<Lottie animationData={export4} loop={true} />}
@@ -66,8 +70,8 @@ function WhatMakesUsExpert() {
         <div cla>
           <ExpertCard
             icon={<Lottie animationData={export3} loop={true} />}
-            title="Multiple Awards Winner"
-            description="Being the tech enthusiasts that we are, our passion recognized on various fronts. We’re the ‘Fastest Growing IT Company in the Region’ and are considered the ‘Best IT Consulting Company’ for providing exceptional services."
+            title="Experienced Professionals"
+            description="Our team of developers and designers are highly skilled and experienced, with years of industry experience working with leading enterprises. They bring a wealth of knowledge and expertise to each project."
           />
         </div>
       </motion.div>

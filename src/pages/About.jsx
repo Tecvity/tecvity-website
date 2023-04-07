@@ -20,7 +20,8 @@ function About() {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-6xl lg:text-7xl -mb-24 lg:-m-mb40  text-center text-main mt-48">
+        className="text-6xl lg:text-7xl -mb-24 lg:-m-mb40  text-center text-main mt-48"
+      >
         About Us
       </motion.h1>
       <div className="flex-col bg-black flex mb-4 lg:flex-row lg:justify-center lg:mx-8 my-32">
@@ -30,14 +31,18 @@ function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first flex flex-row lg:flex-col text-center lg:text-left text-main lg:w-3/5 lg:py-6">
+          className="font-first flex flex-row lg:flex-col text-center lg:text-left text-main lg:w-3/5 lg:py-6"
+        >
           <div className="flex items-center flex-col lg:flex-row justify-center lg:justify-start">
             <p className="text-lg mr-0 lg:mr-24 mt-0 text-white">
-              At Tecvity, we are committed to providing the highest quality
-              software solutions to our clients. Our team of engineers and
-              designers are highly skilled and professional, ensuring that our
-              services are of the highest standard. We take pride in delivering
-              solutions that exceed our clients' expectations.
+              At Tecvity, we are dedicated to delivering exceptional software
+              solutions that help our clients achieve their goals. Our team of
+              highly skilled engineers and designers are committed to excellence
+              and take pride in delivering services that exceed our clients'
+              expectations. We prioritize communication, collaboration, and
+              innovation to ensure that every project is a success. With a focus
+              on quality and customer satisfaction, Tecvity is the partner you
+              can trust for your software development needs.
             </p>
             <Lottie
               animationData={Team}
@@ -47,7 +52,7 @@ function About() {
           </div>
         </motion.div>
       </div>
-      <Link to="contact">
+      {/* <Link to="contact">
         <motion.button
           variants={fadeIn("right", 0.5)}
           initial="hidden"
@@ -57,7 +62,7 @@ function About() {
           className="text-black mb-52 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
           Learn More
         </motion.button>
-      </Link>
+      </Link> */}
       <Vision />
       <Link to="contact">
         <motion.button
@@ -66,7 +71,8 @@ function About() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           type="button"
-          className="text-black mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+          className="text-black mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center"
+        >
           Get in Touch
         </motion.button>
       </Link>
@@ -74,9 +80,8 @@ function About() {
         <Values />
       </div>
 
-      
       <WhatWeDo />
-      
+
       <a href="/services">
         <motion.button
           variants={fadeIn("right", 0.5)}
@@ -84,7 +89,8 @@ function About() {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           type="button"
-          className="text-black -mt-60  mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+          className="text-black -mt-60  mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center"
+        >
           See More Services
         </motion.button>
       </a>

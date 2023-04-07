@@ -16,15 +16,22 @@ const Vision = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first flex flex-col text-center lg:text-left text-main lg:w-1/2  lg:py-8">
+          className="font-first flex flex-col text-center lg:text-left text-main lg:w-1/2  lg:py-8"
+        >
           <h1 className="text-5xl lg:text-8xl lg:ml-24 mb-8 mt-14  lg:mb-12">
             Our Vision
           </h1>
           <p className="text-lg mr-0 mb-5 lg:ml-24 text-white">
-            Our vision is to spread the power of technology across the globe. We
-            want to help companies grow their businesses through innovative
-            software solutions and digital transformation using the latest
-            technological approaches.
+            At Tecvity, we believe in the transformative power of technology to
+            drive innovation and growth for businesses around the world. Our
+            vision is to be a global leader in software development, providing
+            cutting-edge solutions that empower our clients to achieve their
+            goals and stay ahead of the competition. By leveraging the latest
+            technological approaches and industry expertise, we are committed to
+            driving digital transformation for companies of all sizes and
+            industries. Our passion for technology and commitment to excellence
+            make us the ideal partner for organizations looking to harness the
+            full potential of the digital age.
           </p>
         </motion.div>
         <motion.div
@@ -32,7 +39,8 @@ const Vision = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-full lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
+          className="w-full lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center "
+        >
           <Lottie animationData={VisionImg} loop={true} />
         </motion.div>
       </div>

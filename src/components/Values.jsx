@@ -18,13 +18,13 @@ const Values = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-center py-8 px-2 font-first ">
+        className="text-center py-8 px-2 font-first "
+      >
         <h1 className="text-6xl lg:text-7xl py-4 text-main mb-8 mt-24">
           Our Core Values
         </h1>
         <p className="text-lg  text-white ">
-          From The Last Many Years, We Have Been Building Great Software
-          Products For Our Clients.
+          Here Are Some Of Our Core Values That We Take Pride In
         </p>
       </motion.div>
       {/* header 2 */}
@@ -33,20 +33,21 @@ const Values = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex  flex-col lg:flex-row justify-center space-y-6  mt-8 space-x-8">
+        className="flex  flex-col lg:flex-row justify-center space-y-6  mt-8 space-x-8"
+      >
         <div className="flex flex-col lg:flex-row  justify-center items-center space-y-6 lg:space-x-8">
           <div></div>
           <Card
             icon={FaLightbulb}
             iconColor="text-yellow-800"
-            title="Be Curious"
-            description="Learning never stops. Open your eyes and look around, the more curious you are, the more possibilities you will open throughout your lifetime."
+            title="Innovation"
+            description="We are committed to using the latest technology and exploring new ideas to drive growth and success for our clients, delivering cutting-edge solutions."
           />
           <Card
             icon={FaHandsHelping}
             iconColor="text-blue-800"
-            title="Be Empathetic"
-            description="We believe in the unique human ability to understand and relate to others. Empathy helps us create more collaborative and respectful workspaces."
+            title="Honesty"
+            description="We believe in transparency, integrity, and ethical behavior in all aspects of our business, building lasting relationships with our clients based on trust and respect."
           />
           <Card
             icon={FaUserCheck}
@@ -57,8 +58,8 @@ const Values = () => {
           <Card
             icon={FaRegCheckCircle}
             iconColor="text-purple-800"
-            title="Keep Promises"
-            description="We believe that trust is the most important key in all our relationships and we take pride in delivering with Quality, precision and integrity."
+            title="Collaboration"
+            description="Our team works together with clients and partners to ensure project success through open communication, mutual respect, and teamwork."
           />
           <div></div>
         </div>
