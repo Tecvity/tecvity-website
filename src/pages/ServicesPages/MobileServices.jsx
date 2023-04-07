@@ -27,7 +27,7 @@ function MobileServices() {
               Mobile App Development
             </p>
             <h1 className="bg-gradient-to-r from-main bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-main lg:text-7xl">
-              We Build Appls People Love To Use
+              We Build Apps People Love To Use
             </h1>
             <p className="text-2xl py-4 text-white hover:text-main">
               We deliver more than just apps. We deliver experiences. Our fast,
