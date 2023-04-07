@@ -33,8 +33,12 @@ const Blog = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="font-first mb-8 lg:pb-16 text-4xl text-main text-center lg:text-7xl">
-        <h1>Blog</h1>
+        className="font-first mb-8 lg:pb-16 text-4xl text-main text-center lg:text-7xl"
+      >
+        <h1>Blog</h1><br/>
+        <h1 >
+          Posts are being written yet :){" "}
+        </h1>
       </motion.div>
       {paginatedBlog.map((item) => (
         <motion.div
@@ -43,11 +47,16 @@ const Blog = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           key={item.id}
-          className="w-full md:w-2/3 lg:w-1/2 bg-main shadow-md p-4 rounded-md my-4">
+          className="w-full md:w-2/3 lg:w-1/2 bg-main shadow-md p-4 rounded-md my-4"
+        >
           <Link
             to={`/blog/${item.id}`}
-            className="text-black font-first text text-4xl lg:text-6xl mb-2">
+            className="text-black font-first text text-4xl lg:text-6xl mb-2"
+          >
             {item.title}
+            <h1 className="text-3xl text-main font-bold mb-4">
+              Posts are being written yet{" "}
+            </h1>
           </Link>
           <p className="text-gray-900 leading-6 line-clamp-4 mt-2 ">
             {item.description}
@@ -61,11 +70,13 @@ const Blog = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex mt-4">
+        className="flex mt-4"
+      >
         {currentPage > 1 && (
           <button
             className="border-2 border-main bg-green-900 hover:text-green-500 mr-4 rounded-xl p-2 text-white"
-            onClick={() => goToPage(currentPage - 1)}>
+            onClick={() => goToPage(currentPage - 1)}
+          >
             Previous
           </button>
         )}
@@ -73,7 +84,8 @@ const Blog = () => {
         {endIndex < blog.length && (
           <button
             className="border-2 border-main bg-green-900 hover:text-green-500 rounded-xl p-2 text-white"
-            onClick={() => goToPage(currentPage + 1)}>
+            onClick={() => goToPage(currentPage + 1)}
+          >
             Next
           </button>
         )}

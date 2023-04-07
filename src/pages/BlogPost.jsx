@@ -16,6 +16,7 @@ const BlogPost = () => {
         Go back
       </a>
       <h1 className="text-3xl text-main font-bold mb-4">{selectedBlog.title}</h1>
+
       <img
         className="w-full mb-4"
         src={selectedBlog.img}
