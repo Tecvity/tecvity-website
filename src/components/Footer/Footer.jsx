@@ -72,41 +72,47 @@ const Footer = () => {
                 href="https://github.com/tecvity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4">
+                className="mr-4"
+              >
                 <FaGithub className="hover:text-green-600" />
               </a>
               <a
                 href="https://www.linkedin.com/company/tecvity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4">
+                className="mr-4"
+              >
                 <FaLinkedin className="hover:text-green-600" />
               </a>
               <a
                 href="https://twitter.com/tecvity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4">
+                className="mr-4"
+              >
                 <FaTwitter className="hover:text-green-600" />
               </a>
               <a
                 href="https://www.instagram.com/tecvity/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4">
+                className="mr-4"
+              >
                 <FaInstagram className="hover:text-green-600" />
               </a>
               <a
-                href="https://www.youtube.com/channel/your-channel"
+                href="https://www.youtube.com/@tecvity"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-4">
+                className="mr-4"
+              >
                 <FaYoutube className="hover:text-green-600" />
               </a>
               <a
-                href="https://mastodon.social/@your-username"
+                href="https://mastodon.social/@tecvity"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <FaMastodon className="hover:text-green-600" />
               </a>
             </div>
