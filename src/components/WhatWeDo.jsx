@@ -18,49 +18,49 @@ const services = [
   {
     name: "Mobile Development",
     description:
-      "We bring your website to life with efficient, optimized code. We offer full-service web development fast, secure, and search engine friendly.",
+      "Custom development of mobile applications for iOS and Android platforms",
     link: "Learn More",
     href: "/services/mobiledevelopment",
   },
   {
     name: "Graphic Design",
     description:
-      "We offer services to help you reach your target audience and achieve your goals. We develop custom strategies for search engine optimization, social media, and pay-per-click advertising.",
+      "Creation of visually stunning graphics and designs for branding, marketing, and web applications.",
     link: "Learn More",
     href: "/services/graphicdesign",
   },
   {
     name: "Web Development",
     description:
-      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+      "We bring your website to life with efficient, optimized code. We offer full-service web development fast, secure, and search engine friendly.",
     link: "Learn More",
     href: "/services/webdevelopment",
   },
   {
     name: "CyberSecurity",
     description:
-      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+      "Comprehensive cybersecurity services to ensure the security and protection of your software systems and data.",
     link: "Learn More",
     href: "/services/cybersecurity",
   },
   {
     name: "DevOps",
     description:
-      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+      "Streamlined and efficient software development and deployment processes through automation and collaboration.",
     link: "Learn More",
     href: "/services/devops",
   },
   {
     name: "QA & Testing",
     description:
-      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+      "Rigorous testing and quality assurance services to ensure the reliability and functionality of software solutions.",
     link: "Learn More",
     href: "/services/qatesting",
   },
   {
     name: "Custom Software Development",
     description:
-      "We create unique and consistent visual identities that accurately reflect your brand. I offer product branding services to help you launch or rebrand your product effectively.",
+      "Customized software development services to meet the unique needs and requirements of each client.",
     link: "Learn More",
     href: "/services/customservices",
   },
