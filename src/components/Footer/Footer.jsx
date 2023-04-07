@@ -109,7 +109,7 @@ const Footer = () => {
                 <FaYoutube className="hover:text-green-600" />
               </a>
               <a
-                href="https://mastodon.social/@tecvity"
+                href="https://mastodon.world/@tecvity"
                 target="_blank"
                 rel="noopener noreferrer"
               >
