@@ -50,19 +50,18 @@ function MainServices() {
           viewport={{ once: false, amount: 0.3 }}
           className="flex lg:w-1/2 my-auto flex-col">
           <div className="text-main lg:ml-5 my-4 text-center text-3xl lg:text-6xl">
-            <h1>Software Development</h1>
+            <h1>Software Services Company</h1>
           </div>
           <div className="text-white lg:ml-5 my-4 text-center  text-xl lg:text-3xl">
             <p>
-              Named among top 1% global companies by Clutch, we have the trust
-              of 500+ companies when it comes to bespoke software solutions.
+              We provide a wide range of software services to help you build versatile solutions for your business. All the services being provided by us use modern technologies
             </p>
           </div>
           <Link to="contact">
             <button
               type="button"
               className="text-black flex justify-center mx-auto  my-4 font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
-              Explore Our Digital Solutions
+              Lets Discuss Your Idea!
             </button>
           </Link>
         </motion.div>
@@ -87,7 +86,7 @@ function MainServices() {
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
-                title="Custom Software"
+                title="Custom Software Development"
                 href={"/services/customservices"}
               />
               <MainServiceCard
@@ -121,7 +120,7 @@ function MainServices() {
               <MainServiceCard
                 icon={FaArrowRight}
                 iconColor="text-blue-700"
-                title="User Interface"
+                title="UI/UX Design"
                 href={"/services/userinterface"}
               />
             </div>
@@ -153,7 +152,7 @@ function MainServices() {
           <ServiceCard
             icon={FaArrowRight}
             iconColor="text-blue-600"
-            title="Custom Software"
+            title="Custom Software Development"
             description="
 Our full-stack engineering experts develop enterprise-grade solutions tailored to your specific business needs."
           />
@@ -188,7 +187,7 @@ Our full-stack engineering experts develop enterprise-grade solutions tailored t
           <ServiceCard
             icon={FaArrowRight}
             iconColor="text-blue-600"
-            title="User Interface"
+            title="UI/UX Design"
             description="Want to build a remarkable product that is an instant win? We create meaningful experiences and turn them into tangible business results."
           />
         </div>

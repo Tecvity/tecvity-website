@@ -12,7 +12,7 @@ function Portfolio() {
 
       <div className="-mt-96">
 
-      <CustomServices />
+      {/* <CustomServices /> */}
       </div>
     </div>
   );
