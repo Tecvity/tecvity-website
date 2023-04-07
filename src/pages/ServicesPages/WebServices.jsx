@@ -24,7 +24,8 @@ function Hero() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="absolute top-32 lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10">
+            className="absolute top-32 lg:top-64 left-0 right-0 bottom-0 font-first pb-4 lg:pb-24 text-white text-center items-center flex flex-col z-10"
+          >
             <p className="text-2xl py-4 text-slate-300 hover:text-main">
               Web App Development
             </p>
@@ -49,17 +50,18 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="font-first flex flex-col text-center ml-0 lg:ml-12 lg:text-left text-main lg:w-1/2  lg:py-8">
+          className="font-first flex flex-col text-center ml-0 lg:ml-12 lg:text-left text-main lg:w-1/2  lg:py-8"
+        >
           <h1 className="text-4xl lg:text-6xl mb-8   lg:mb-12">
-            Tkxel Pivots On A Solid Foundation, One That Is Built On Your Vision
-            & Our Expertise.{" "}
+            Tecvity Pivots On A Solid Foundation, One That Is Built On Your
+            Vision & Our Expertise.{" "}
           </h1>
           <p className="text-lg mr-0 mb-5 lg:mr-24 text-white">
             We apply collaborative, human-centered design thinking to even the
             toughest of business challenges. With a relentless commitment to
             innovation and world-class craftsmanship, we deliver the most
             beautiful, meaningful and impactful experiences for your customers.
-            Tkxel has a proven track record of delivering impactful customer
+            Tecvity has a proven track record of delivering impactful customer
             experiences, unlocking the power of technology within organizations,
             and stimulating growth with brave new initiatives. We're a
             full-service design team. We'll do everything from giving you the
@@ -75,7 +77,8 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
+          className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center "
+        >
           <Lottie animationData={Web} loop={true} />
         </motion.div>
       </div>
@@ -85,7 +88,8 @@ function Hero() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
+          className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl"
+        >
           Our Services
         </motion.h1>
         <div className="flex flex-col lg:flex-row">
@@ -125,7 +129,7 @@ function Hero() {
             icon={FaShoppingCart}
             iconColor="text-blue-600"
             title="E-Commerce Web Development"
-            description="Tkxel can build web apps for e-commerce businesses, including online stores, shopping carts, and payment gateway integration."
+            description="Tecvity can build web apps for e-commerce businesses, including online stores, shopping carts, and payment gateway integration."
           />
         </div>
         <div className="flex mx-auto justify-center flex-col lg:flex-row">
@@ -151,7 +155,8 @@ function Hero() {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             type="button"
-            className="text-black mt-12 pb-42 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center">
+            className="text-black mt-12 pb-42 mx-auto flex justify-center font-first bg-main hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-6 lg:px-8 py-4 lg:py-4 text-center"
+          >
             Get in Touch
           </motion.button>
         </Link>
