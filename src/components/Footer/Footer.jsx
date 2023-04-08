@@ -33,7 +33,7 @@ const Footer = () => {
                 <li className="hover:text-green-600 ">User Interface</li>
               </Link>
               <Link to="/services/graphicdesign">
-                <li className="hover:text-green-600 ">UI/UX Design</li>
+                <li className="hover:text-green-600 ">Graphic Designing</li>
               </Link>
             </ul>
           </div>
@@ -43,10 +43,10 @@ const Footer = () => {
             </h3>
             <ul>
               <li className="hover:text-green-600 ">
-                <a href="/services/customservices">Custom Software</a>
+                <a href="/services/customservices">Custom Software Development</a>
               </li>
               <li className="hover:text-green-600 ">
-                <a href="/services/qatesting"> QA & Testing</a>
+                <a href="/services/qatesting"> Quality Assurance & Testing</a>
               </li>
               <li className="hover:text-green-600 ">
                 <a href="/services/devops">DevOps</a>
