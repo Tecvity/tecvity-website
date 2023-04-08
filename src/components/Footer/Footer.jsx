@@ -43,7 +43,9 @@ const Footer = () => {
             </h3>
             <ul>
               <li className="hover:text-green-600 ">
-                <a href="/services/customservices">Custom Software Development</a>
+                <a href="/services/customservices">
+                  Custom Software Development
+                </a>
               </li>
               <li className="hover:text-green-600 ">
                 <a href="/services/qatesting"> Quality Assurance & Testing</a>
@@ -67,7 +69,11 @@ const Footer = () => {
               <FaEnvelope className="inline-block mr-2" />{" "}
               <a href="mailto:hello@tecvity.co">hello@tecvity.co</a>
             </p>
-            <p>Gujranwala, Pakistan</p>
+            <p>
+              <a href="https://en.wikipedia.org/wiki/Gujranwala">
+                Gujranwala, Pakistan
+              </a>
+            </p>
             <div className="flex mt-4">
               <a
                 href="https://github.com/tecvity"
