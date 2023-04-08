@@ -64,7 +64,8 @@ const Footer = () => {
               <FaPhone className="inline-block mr-2" /> +92-308-8438733
             </p>
             <p className="mb-2 hover:text-green-600 ">
-              <FaEnvelope className="inline-block mr-2" /> hello@tecvity.co
+              <FaEnvelope className="inline-block mr-2" />{" "}
+              <a href="mailto:hello@tecvity.co">hello@tecvity.co</a>
             </p>
             <p>Gujranwala, Pakistan</p>
             <div className="flex mt-4">
