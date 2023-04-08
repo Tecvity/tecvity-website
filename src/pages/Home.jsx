@@ -12,8 +12,8 @@ function Home() {
   return (
     <div>
       <Hero />
-      {/* <Services /> */ }
-      <WhatWeDo />
+       <Services /> 
+      {/* <WhatWeDo /> */}
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
@@ -53,7 +53,7 @@ function Home() {
             About Us
           </motion.button>
         </Link>
-        <Services />
+        {/* <Services /> */}
       </div>
     </div>
   );
