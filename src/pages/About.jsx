@@ -10,8 +10,13 @@ import WhatWeDo from "../components/WhatWeDo";
 import WhatMakesUsExpert from "../components/WhatMakesUsExpert";
 import Offices from "../components/Offices";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 function About() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <div>
       <AboutHero />

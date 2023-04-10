@@ -7,8 +7,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
 import WhatWeDo from "../components/WhatWeDo";
-
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 function Home() {
+    useEffect(() => {
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
   return (
     <div>
       <Hero />

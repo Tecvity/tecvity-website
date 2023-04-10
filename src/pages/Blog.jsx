@@ -3,13 +3,16 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { blog } from "../data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(4);
   const location = useLocation();
   const navigate = useNavigate();
-
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   useEffect(() => {
     // Update the current page based on the URL
     const queryParams = new URLSearchParams(location.search);
