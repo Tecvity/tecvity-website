@@ -1,5 +1,5 @@
 import LogoImg from "./assets/logo-green.png";
-import Img from "./assets/office.jpg";
+// import Img from "./assets/office.jpg";
 
 export const nav = [
   { name: "Services", href: "/services" },

@@ -6,7 +6,7 @@ import Vision from "../components/Vision";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
-import WhatWeDo from "../components/WhatWeDo";
+// import WhatWeDo from "../components/WhatWeDo";
 import { useEffect } from "react";
 import ReactGA from "react-ga";
 function Home() {
