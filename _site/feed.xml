@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tecvity</title>
+    <description>A one stop solution for all your software needs. We offer services in web and mobile app design and development. Find out more on our website.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 14 Apr 2023 11:16:29 +0500</pubDate>
+    <lastBuildDate>Fri, 14 Apr 2023 11:16:29 +0500</lastBuildDate>
+    <generator>Jekyll v4.3.1</generator>
+    
+      <item>
+        <title>Dinghy Sailing</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 +0500</pubDate>
+        <link>http://localhost:4000/web%20development/2014/07/18/project-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20development/2014/07/18/project-1/</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Tech On Tap</title>
+        <description>
+</description>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 +0500</pubDate>
+        <link>http://localhost:4000/web%20development/2014/07/17/project-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20development/2014/07/17/project-2/</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+  </channel>
+</rss>
