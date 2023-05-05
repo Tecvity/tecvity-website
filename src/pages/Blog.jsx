@@ -37,10 +37,8 @@ const Blog = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="font-first mb-8 lg:pb-16 text-4xl text-main text-center lg:text-7xl"
       >
-        <h1>Blog</h1><br/>
-        <h1 >
-          Posts are being written yet :){" "}
-        </h1>
+        <h1>Blog</h1>
+        <br />
       </motion.div>
       {paginatedBlog.map((item) => (
         <motion.div
@@ -56,9 +54,6 @@ const Blog = () => {
             className="text-black font-first text text-4xl lg:text-6xl mb-2"
           >
             {item.title}
-            <h1 className="text-3xl text-main font-bold mb-4">
-              Posts are being written yet{" "}
-            </h1>
           </Link>
           <p className="text-gray-900 leading-6 line-clamp-4 mt-2 ">
             {item.description}
