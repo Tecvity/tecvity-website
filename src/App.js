@@ -16,7 +16,7 @@ import DevOps from "./pages/ServicesPages/DevOps";
 import Qa from "./pages/ServicesPages/Qa";
 import CyberSecurtiy from "./pages/ServicesPages/CyberSecurity";
 import CustomSoftware from "./pages/ServicesPages/CustomSoftware";
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 export default function App() {
   ReactGA.initialize("G-ZNDRQHEH3Y");
   return (

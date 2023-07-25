@@ -8,10 +8,14 @@ import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
 // import WhatWeDo from "../components/WhatWeDo";
 import { useEffect } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 function Home() {
     useEffect(() => {
-      ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send({
+          hitType: "pageView",
+          page: window.location.pathname + window.location.search,
+          title: "Home",
+        });
     }, []);
   return (
     <div>
