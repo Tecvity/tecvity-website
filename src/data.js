@@ -5,7 +5,7 @@ export const nav = [
   { name: "Services", href: "/services" },
   { name: "About us", href: "/about" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "https://blog.tecvity.co" },
 ];
 
 export const header = {
