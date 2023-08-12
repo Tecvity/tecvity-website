@@ -6,13 +6,15 @@ import "swiper/swiper.min.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import "../App.css";
-import work1 from "../assets/images/portfolio/dinghysailing.jpg";
-import work2 from "../assets/images/portfolio/techontap.jpg";
-import work3 from "../assets/images/portfolio/terravirtua.jpg";
+import work1 from "../assets/images/portfolio/dinghy.webp";
+import work2 from "../assets/images/portfolio/dinghysailing.webp";
+import work3 from "../assets/images/portfolio/exfinitee_tecvity_web_portfolio.webp";
+import work4 from "../assets/images/portfolio/virtua.webp";
+import work5 from "../assets/images/portfolio/fairshare.webp";
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
-const slide_img = [work1, work2, work3,];
+const slide_img = [work1, work2, work3, work4, work5 ];
 
 const FeaturedWork = () => {
   const swiperRef = useRef(null);
