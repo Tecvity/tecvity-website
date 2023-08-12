@@ -9,8 +9,8 @@ import "../App.css";
 import work1 from "../assets/images/portfolio/dinghy.webp";
 import work2 from "../assets/images/portfolio/dinghysailing.webp";
 import work3 from "../assets/images/portfolio/exfinitee_tecvity_web_portfolio.webp";
-import work4 from "../assets/images/portfolio/virtua.webp";
-import work5 from "../assets/images/portfolio/fairshare.webp";
+import work4 from "../assets/images/portfolio/fairshare.webp";
+import work5 from  "../assets/images/portfolio/virtua.webp";
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
@@ -36,6 +36,7 @@ const FeaturedWork = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }} className=" w-full mt-12 lg:w-4/5 h-3/5 flex border-4 border-white items-center justify-center mx-auto mb-12">
+       
         <Swiper
           pauseOnMouseEnter={true}
           centeredSlides={true}
@@ -54,8 +55,10 @@ const FeaturedWork = () => {
           {slide_img.map((img, i) => {
             return (
               <SwiperSlide key={i}>
-                <img src={slide_img[i]} alt="" />
-              </SwiperSlide>
+                <img src={slide_img[i]} alt={`Slide ${i + 1}`}  
+          style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}  
+        />
+      </SwiperSlide>
             );
           })}
         </Swiper>
