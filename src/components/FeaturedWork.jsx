@@ -8,11 +8,21 @@ import { fadeIn } from "../variants";
 import "../App.css";
 import dinghysailing from "../assets/images/portfolio/dinghysailing.webp";
 import exfinite from "../assets/images/portfolio/exfinitee_tecvity_web_portfolio.webp";
-import terravirtua from "../assets/images/portfolio/virtua.webp";
+import terravirtua from "../assets/images/portfolio/terravirtua.jpg";
+import nexonic from "../assets/images/portfolio/nexonic.png";
+import payqual from "../assets/images/portfolio/payqual.png";
+import infosec from "../assets/images/portfolio/infosec.png";
 
 SwiperCore.use([EffectCoverflow, Navigation, Pagination]);
 
-const slide_img = [dinghysailing, exfinite, terravirtua];
+const slide_img = [
+  nexonic,
+  payqual,
+  exfinite,
+  dinghysailing,
+  infosec,
+  terravirtua,
+];
 
 const FeaturedWork = () => {
   const swiperRef = useRef(null);
