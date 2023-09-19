@@ -22,10 +22,10 @@ function Hero() {
             Delivering Creative Technological Solutions
           </h1>
           <p className="text-2xl py-4 text-white hover:text-main">
-            We see what others don't
+            We are a cybersecurity & software solutions provider
           </p>
           <p className="text-2xl py-4 text-white hover:text-main">
-            We deliver what others won't
+            For B2B Startups, SMEs & Enterprises
           </p>
             <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
           <Link to="contact">
