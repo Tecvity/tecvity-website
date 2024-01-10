@@ -1,6 +1,12 @@
 # Tecvity Main Website
 
-This is tecvity's main website deployed on Github pages, it is built with React so `gh-pages` package is used to deploy it
+## Building locally
+```
+git clone https://github.com/Tecvity/tecvity.github.io
+cd tecvity.github.io
+npm install
+npm run start
+```
 
 ## Deployment
 The website is now deployed on Netlify, all you need is to push the changes to repo and it will be deployed automatically, no need to run `gh-pages` command anymore. Blog app is now deployed at `blog.tecvity.co` and the main website is deployed at `tecvity.co`
